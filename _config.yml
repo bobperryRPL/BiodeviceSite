@@ -1,0 +1,11 @@
+title: My Site
+description: A basic Jekyll + Decap CMS site
+baseurl: ""
+url: ""
+
+markdown: kramdown
+
+include:
+  - admin
+  - _redirects
+  - _headers
