@@ -16,22 +16,127 @@ collections:
         file: "index.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Kicker", name: "kicker", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Lead", name: "lead", widget: "text" }
+          - { label: "Sublead", name: "sublead", widget: "text", required: false }
           - { label: "Body", name: "body", widget: "markdown" }
-
-      - label: "About"
+      - label: "About the Foundry"
         name: "about"
         file: "about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Permalink", name: "permalink", widget: "string", required: false }
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Kicker", name: "kicker", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Lead", name: "lead", widget: "text" }
+          - { label: "Sublead", name: "sublead", widget: "text", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "What We Offer"
+        name: "what_we_offer"
+        file: "what-we-offer.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Kicker", name: "kicker", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Lead", name: "lead", widget: "text" }
+          - { label: "Sublead", name: "sublead", widget: "text", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Access & Training"
+        name: "access_training"
+        file: "access-training.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Kicker", name: "kicker", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Lead", name: "lead", widget: "text" }
+          - { label: "Sublead", name: "sublead", widget: "text", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Services & Pricing"
+        name: "services_pricing"
+        file: "services-pricing.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Kicker", name: "kicker", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Lead", name: "lead", widget: "text" }
+          - { label: "Sublead", name: "sublead", widget: "text", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Staff & Leadership"
+        name: "staff_leadership"
+        file: "staff-leadership.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Kicker", name: "kicker", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Lead", name: "lead", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Kicker", name: "kicker", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Lead", name: "lead", widget: "text" }
+          - { label: "Sublead", name: "sublead", widget: "text", required: false }
           - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "posts"
-    label: "Posts"
-    folder: "_posts"
+  - name: "capabilities"
+    label: "Capabilities"
+    folder: "_capabilities"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Category Key", name: "category_key", widget: "select", options: ["fabrication", "prototyping", "biofunctionalization", "characterization"] }
+      - { label: "Category Name", name: "category_name", widget: "string" }
+      - { label: "Order", name: "order", widget: "number", value_type: "int" }
+      - { label: "Card Summary", name: "card_summary", widget: "text" }
+      - { label: "Lead", name: "lead", widget: "text" }
+      - { label: "Sublead", name: "sublead", widget: "text", required: false }
+      - { label: "Requirements Intro", name: "requirements_intro", widget: "text" }
+      - label: "What This Enables"
+        name: "enables"
+        widget: "list"
+        field: { label: "Item", name: "item", widget: "string" }
+      - label: "Inputs / Outputs"
+        name: "inputs_outputs"
+        widget: "list"
+        field: { label: "Item", name: "item", widget: "string" }
+      - label: "Requirements"
+        name: "requirements"
+        widget: "list"
+        field: { label: "Item", name: "item", widget: "string" }
+      - { label: "Placeholder Notes", name: "placeholder_notes", widget: "text" }
+      - label: "Related Capability Slugs"
+        name: "related"
+        widget: "list"
+        field: { label: "Slug", name: "slug", widget: "string" }
+
+  - name: "staff"
+    label: "Staff"
+    folder: "_staff"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Order", name: "order", widget: "number", value_type: "int" }
+      - label: "Bio"
+        name: "bio"
+        widget: "list"
+        field: { label: "Paragraph", name: "paragraph", widget: "text" }
