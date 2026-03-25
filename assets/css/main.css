@@ -2,12 +2,17 @@
   --maxw: 1100px;
   --pad: 20px;
   --radius: 14px;
-  --border: #e7e7ea;
-  --muted: #555;
+  --border: #c8d7e6;
+  --muted: #49607d;
   --bg: #ffffff;
-  --bg-soft: #f7f7f9;
-  --text: #111;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --bg-soft: #f3f8fc;
+  --text: #002145;
+  --brand-navy: #002145;
+  --brand-blue: #0055b7;
+  --brand-sky: #40b4e5;
+  --brand-mist: #97d4e9;
+  --brand-gold: #f2a900;
+  --shadow: 0 12px 28px rgba(0, 33, 69, 0.1);
 }
 
 * {
@@ -27,7 +32,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--brand-blue);
   text-decoration: none;
 }
 
@@ -44,7 +49,7 @@ a:hover {
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   z-index: 10;
@@ -64,6 +69,7 @@ a:hover {
   gap: 10px;
   font-weight: 700;
   letter-spacing: 0.2px;
+  color: var(--brand-navy);
 }
 
 .brand small {
@@ -98,7 +104,8 @@ nav li a {
 
 nav li a:hover,
 nav li a[aria-current="page"] {
-  background: var(--bg-soft);
+  background: #e8f1f8;
+  color: var(--brand-navy);
   text-decoration: none;
 }
 
@@ -120,7 +127,7 @@ section {
 }
 
 .hero-card {
-  background: linear-gradient(180deg, var(--bg-soft), #fff);
+  background: linear-gradient(180deg, #eaf4fb 0%, #ffffff 100%);
   padding: 28px;
 }
 
@@ -136,9 +143,9 @@ section {
 .kicker {
   display: inline-block;
   font-weight: 650;
-  color: var(--muted);
-  background: #fff;
-  border: 1px solid var(--border);
+  color: var(--brand-navy);
+  background: #eef6fb;
+  border: 1px solid #b5d7ea;
   padding: 6px 10px;
   border-radius: 999px;
   margin-bottom: 12px;
@@ -218,9 +225,9 @@ p {
 
 .btn.primary,
 .seg[aria-pressed="true"] {
-  background: #111;
+  background: var(--brand-blue);
   color: #fff;
-  border-color: #111;
+  border-color: var(--brand-blue);
 }
 
 .btn.utility {
@@ -232,19 +239,20 @@ p {
 .btn:hover,
 .pill:hover,
 .seg:hover {
-  background: var(--bg-soft);
+  background: #eef6fb;
   text-decoration: none;
 }
 
 .btn.primary:hover,
 .seg[aria-pressed="true"]:hover {
   opacity: 0.92;
-  background: #111;
+  background: var(--brand-navy);
 }
 
 .pill {
   border-radius: 999px;
   padding: 10px 12px;
+  color: var(--brand-navy);
 }
 
 .bullets,
@@ -320,11 +328,11 @@ tbody tr:nth-child(odd) td {
 }
 
 .focus-col {
-  background: #fff3d6 !important;
+  background: #e8f3fb !important;
 }
 
 .focus-head {
-  background: #ffe7b0 !important;
+  background: #cfe8f6 !important;
 }
 
 .fieldgrid {
@@ -380,10 +388,11 @@ textarea {
 }
 
 .site-footer {
-  border-top: 1px solid var(--border);
+  border-top: 4px solid var(--brand-gold);
   padding: 28px 0;
   margin-top: 10px;
-  background: #fff;
+  background: var(--brand-navy);
+  color: #fff;
 }
 
 .footer-row {
@@ -391,7 +400,7 @@ textarea {
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
-  color: var(--muted);
+  color: #d6e6f2;
 }
 
 @media (max-width: 860px) {
