@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Access & Training | Conconi Family BioDevice Foundry</title>
+  <meta name="description" content="How to get access, complete training, and book equipment at the Conconi Family BioDevice Foundry (UBC). NEMO login for returning users." />
+  <style>
+    :root {
+      --maxw: 1050px;
+      --pad: 20px;
+      --radius: 14px;
+      --border: #e7e7ea;
+      --muted: #555;
+      --bg: #ffffff;
+      --bg-soft: #f7f7f9;
+      --text: #111;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .brand small { font-weight: 600; color: var(--muted); letter-spacing: 0; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    nav li a { padding: 8px 10px; border-radius: 10px; }
+    nav li a:hover { background: var(--bg-soft); text-decoration: none; }
+
+    main { padding: 34px 0 10px; }
+
+    .hero-card {
+      background: linear-gradient(180deg, var(--bg-soft), #fff);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .kicker {
+      display: inline-block;
+      font-weight: 650;
+      color: var(--muted);
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(26px, 3.8vw, 42px);
+      line-height: 1.15;
+      letter-spacing: -0.6px;
+    }
+    .lead { margin: 0 0 10px; color: #222; max-width: 85ch; }
+    .sublead { margin: 0; color: var(--muted); max-width: 90ch; }
+
+    .btnrow {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      align-items: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-weight: 650;
+    }
+    .btn.primary { background: #111; color: #fff; border-color: #111; }
+    .btn:hover { text-decoration: none; }
+    .btn.primary:hover { opacity: 0.92; }
+    .btn:not(.primary):hover { background: var(--bg-soft); }
+
+    /* Low-priority utility button */
+    .btn.utility {
+      color: var(--muted);
+      background: transparent;
+      border: 1px dashed var(--border);
+    }
+    .btn.utility:hover { background: var(--bg-soft); color: #111; }
+
+    section { padding: 22px 0; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 6px 16px rgba(0,0,0,.04);
+    }
+    .card.soft { background: var(--bg-soft); }
+    .col-8 { grid-column: span 8; }
+    .col-4 { grid-column: span 4; }
+    .col-12 { grid-column: span 12; }
+
+    h2 { margin: 0 0 10px; font-size: 1.35rem; letter-spacing: -0.2px; }
+    h3 { margin: 14px 0 8px; font-size: 1.05rem; }
+    p { margin: 0 0 10px; color: #222; }
+    .muted { color: var(--muted); }
+
+    ol.steps { margin: 10px 0 0 20px; padding: 0; }
+    ol.steps li { margin: 8px 0; }
+    ul.bullets { margin: 10px 0 0 20px; padding: 0; }
+    ul.bullets li { margin: 6px 0; }
+
+    .pillrow { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    .pill {
+      display: inline-block;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+      font-weight: 650;
+    }
+    .pill:hover { background: var(--bg-soft); text-decoration: none; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      margin-top: 10px;
+      background: #fff;
+    }
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .col-8, .col-4 { grid-column: span 12; }
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV integrates the new sitemap using current site URLs -->
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="/biodevice-foundry/" aria-label="Home">
+          BioDevice Foundry <small>UBC</small>
+        </a>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/biodevice-foundry/about-us/">About the Foundry</a></li>
+            <li><a href="/biodevice-foundry/capabilities/">What We Offer</a></li>
+            <li><a href="/biodevice-foundry/capabilities/user-training-2/">Access & Training</a></li>
+            <li><a href="/biodevice-foundry/fees/">Services & Pricing</a></li>
+            <li><a href="/biodevice-foundry/news-events-and-gallery/">News & Events</a></li>
+            <li><a href="/biodevice-foundry/contact-us/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO: NEMO FIRST -->
+      <div class="hero-card">
+        <span class="kicker">Access &amp; Training</span>
+        <h1>Get access, complete training, and book equipment</h1>
+
+        <p class="lead">
+          Returning user? Start with NEMO. New here? Scroll down for the step-by-step onboarding pathway.
+        </p>
+
+        <div class="btnrow" role="group" aria-label="Primary actions">
+          <a class="btn primary" href="/biodevice-foundry/nemo-login/">NEMO Login</a>
+          <a class="btn" href="#new-users">New user steps</a>
+          <a class="btn utility" href="/biodevice-foundry/contact-us/">Ask a question</a>
+        </div>
+
+        <div class="pillrow" aria-label="Jump to section">
+          <a class="pill" href="#returning-users">Returning users</a>
+          <a class="pill" href="#new-users">New users</a>
+          <a class="pill" href="#training">Training</a>
+          <a class="pill" href="#booking">Booking</a>
+          <a class="pill" href="#policies">Policies &amp; safety</a>
+        </div>
+
+        <p class="sublead">
+          Note: access requirements vary by tool, process, and safety category. If you’re unsure what applies to your project,
+          contact us and we’ll help you figure it out quickly.
+        </p>
+      </div>
+
+      <!-- Returning users -->
+      <section id="returning-users">
+        <div class="grid">
+          <div class="card col-8">
+            <h2>Returning users</h2>
+            <p>
+              If you already have access, use NEMO to manage your account, confirm training status, and book equipment.
+            </p>
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/nemo-login/">Go to NEMO Login</a>
+              <a class="btn" href="#booking">How booking works</a>
+            </div>
+
+            <h3>What you can do in NEMO</h3>
+            <ul class="bullets">
+              <li>Log in and manage your user profile</li>
+              <li>Check training / access permissions</li>
+              <li>Book equipment (when available for self-serve)</li>
+              <li>Track reservations and related account information</li>
+            </ul>
+          </div>
+
+          <div class="card soft col-4">
+            <h2>Need help?</h2>
+            <p class="muted">
+              If you can’t log in, don’t see the tool you need, or your permissions look wrong,
+              reach out and we’ll help troubleshoot.
+            </p>
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/contact-us/">Contact support</a>
+              <a class="btn" href="/biodevice-foundry/fees/">Fees &amp; Pricing</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- New users -->
+      <section id="new-users">
+        <div class="grid">
+          <div class="card col-12">
+            <h2>New users: the typical onboarding path</h2>
+            <p>
+              Access to the BioDevice Foundry is managed through a structured user program designed to ensure safety,
+              efficiency, and project success.
+            </p>
+
+            <ol class="steps">
+              <li><strong>Create a user account</strong> (or request access if you don’t have one yet)</li>
+              <li><strong>Complete required training</strong> based on your intended tools and processes</li>
+              <li><strong>Book equipment or request services</strong> depending on your workflow</li>
+            </ol>
+
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/contact-us/">Start onboarding (contact us)</a>
+              <a class="btn" href="/biodevice-foundry/capabilities/">Explore what we offer</a>
+              <a class="btn" href="/biodevice-foundry/fees/">Fees &amp; Pricing</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Training -->
+      <section id="training">
+        <div class="grid">
+          <div class="card col-8">
+            <h2>Training</h2>
+            <p>
+              Training requirements depend on the tools and process categories you plan to use (e.g., cleanroom processes,
+              wet chemistry, machining, or characterization). Some tools may be staff-operated; others may become self-serve after training.
+            </p>
+
+            <h3>Typical training components</h3>
+            <ul class="bullets">
+              <li>Facility orientation (rules, expectations, and best practices)</li>
+              <li>Safety and hazard-specific training (as applicable)</li>
+              <li>Tool-specific training (hands-on)</li>
+              <li>Competency sign-off before independent use (when self-serve is permitted)</li>
+            </ul>
+
+            <p class="muted">
+              (Add your current site’s exact training requirements, course links, and sign-off steps here.)
+            </p>
+          </div>
+
+          <div class="card soft col-4">
+            <h2>Fast routing tip</h2>
+            <p class="muted">
+              If you tell us what you’re building (materials, scale, biology, and timeline), we can recommend the
+              minimum training pathway to get started efficiently.
+            </p>
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/contact-us/">Describe your project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking -->
+      <section id="booking">
+        <div class="grid">
+          <div class="card col-8">
+            <h2>Booking and using equipment</h2>
+            <p>
+              Once you have the required training and permissions, you can book equipment (when available for self-serve) through NEMO.
+              For staff-assisted work or specialized workflows, contact us to coordinate.
+            </p>
+
+            <h3>Two common pathways</h3>
+            <ul class="bullets">
+              <li><strong>Self-serve:</strong> trained users book time and operate approved tools independently</li>
+              <li><strong>Staff-assisted:</strong> staff perform or support critical steps, complex tools, or specialized processes</li>
+            </ul>
+
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/nemo-login/">NEMO Login</a>
+              <a class="btn" href="/biodevice-foundry/contact-us/">Request staff-assisted work</a>
+            </div>
+          </div>
+
+          <div class="card soft col-4">
+            <h2>Before you book</h2>
+            <ul class="bullets">
+              <li>Confirm training status</li>
+              <li>Check tool readiness and scheduling constraints</li>
+              <li>Ensure your materials are compatible and approved</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Policies & safety -->
+      <section id="policies">
+        <div class="grid">
+          <div class="card col-12">
+            <h2>Policies &amp; safety</h2>
+            <p>
+              The Foundry operates with safety-first policies appropriate for cleanroom, chemistry, and fabrication environments.
+              Users must follow facility rules, complete required training, and use approved materials and procedures.
+            </p>
+            <p class="muted">
+              (Add your current site’s safety policies, permitted/restricted materials, PPE expectations, and escalation contacts here.)
+            </p>
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/contact-us/">Ask about compliance</a>
+              <a class="btn" href="/biodevice-foundry/fees/">Fees &amp; Pricing</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section>
+        <div class="grid">
+          <div class="card soft col-12">
+            <h2>Not sure which path applies to you?</h2>
+            <p class="muted">
+              Send us a short description of your project (what you’re building, materials, key constraints, and timeline),
+              and we’ll recommend the best access/training pathway.
+            </p>
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/contact-us/">Contact us</a>
+              <a class="btn" href="/biodevice-foundry/capabilities/">What we offer</a>
+              <a class="btn" href="/biodevice-foundry/nemo-login/">NEMO Login</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-row">
+        <div>
+          <strong>Conconi Family BioDevice Foundry</strong><br />
+          <span class="muted">University of British Columbia</span>
+        </div>
+        <div class="muted">© <span id="year"></span> BioDevice Foundry</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

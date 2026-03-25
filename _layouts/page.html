@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="wrap page-shell">
+  {% if page.kicker or page.hero_title or page.lead %}
+    <section class="hero-block">
+      <div class="hero-card">
+        {% if page.kicker %}<span class="kicker">{{ page.kicker }}</span>{% endif %}
+        <h1>{{ page.hero_title | default: page.title }}</h1>
+        {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+        {% if page.sublead %}<p class="sublead">{{ page.sublead }}</p>{% endif %}
+        {% if page.hero_actions %}
+          <div class="btnrow">
+            {% for action in page.hero_actions %}
+              <a class="btn{% if action.primary %} primary{% endif %}{% if action.utility %} utility{% endif %}" href="{{ action.url | relative_url }}">{{ action.label }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if page.jump_links %}
+          <div class="pillrow">
+            {% for jump in page.jump_links %}
+              <a class="pill" href="{{ jump.url }}">{{ jump.label }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
+  {{ content }}
+</div>

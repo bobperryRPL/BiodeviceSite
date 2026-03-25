@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services & Pricing | Conconi Family BioDevice Foundry</title>
+  <meta name="description" content="Services and pricing for the Conconi Family BioDevice Foundry (UBC). View rates by user type and see instrument hourly fees." />
+
+  <style>
+    :root {
+      --maxw: 1100px;
+      --pad: 20px;
+      --radius: 14px;
+      --border: #e7e7ea;
+      --muted: #555;
+      --bg: #ffffff;
+      --bg-soft: #f7f7f9;
+      --text: #111;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .brand small { font-weight: 600; color: var(--muted); letter-spacing: 0; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    nav li a { padding: 8px 10px; border-radius: 10px; }
+    nav li a:hover { background: var(--bg-soft); text-decoration: none; }
+
+    main { padding: 34px 0 10px; }
+
+    .hero-card {
+      background: linear-gradient(180deg, var(--bg-soft), #fff);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .kicker {
+      display: inline-block;
+      font-weight: 650;
+      color: var(--muted);
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(26px, 3.8vw, 42px);
+      line-height: 1.15;
+      letter-spacing: -0.6px;
+    }
+    .lead { margin: 0 0 10px; color: #222; max-width: 95ch; }
+    .sublead { margin: 0; color: var(--muted); max-width: 95ch; }
+
+    .btnrow {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      align-items: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-weight: 650;
+    }
+    .btn.primary { background: #111; color: #fff; border-color: #111; }
+    .btn:hover { text-decoration: none; }
+    .btn.primary:hover { opacity: 0.92; }
+    .btn:not(.primary):hover { background: var(--bg-soft); }
+
+    .btn.utility {
+      color: var(--muted);
+      background: transparent;
+      border: 1px dashed var(--border);
+    }
+    .btn.utility:hover { background: var(--bg-soft); color: #111; }
+
+    section { padding: 22px 0; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 6px 16px rgba(0,0,0,.04);
+    }
+    .card.soft { background: var(--bg-soft); }
+    .col-8 { grid-column: span 8; }
+    .col-4 { grid-column: span 4; }
+    .col-12 { grid-column: span 12; }
+
+    h2 { margin: 0 0 10px; font-size: 1.35rem; letter-spacing: -0.2px; }
+    h3 { margin: 16px 0 8px; font-size: 1.05rem; }
+    p { margin: 0 0 10px; color: #222; }
+    .muted { color: var(--muted); }
+
+    /* Pleasing pricing display: selector + “focus column” tables */
+    .selector {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 10px 0 0;
+      align-items: center;
+    }
+    .seg {
+      border: 1px solid var(--border);
+      background: #fff;
+      padding: 10px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      cursor: pointer;
+      user-select: none;
+    }
+    .seg[aria-pressed="true"] {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+    }
+    th, td {
+      padding: 12px 12px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 1;
+      font-size: 0.95rem;
+    }
+    tbody tr:nth-child(odd) td { background: #fafafb; }
+
+    /* highlight the selected column */
+    .focus-col { background: #fff3d6 !important; } /* soft highlight without being loud */
+    .focus-head { background: #ffe7b0 !important; }
+
+    .note {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .inline-list {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+    .inline-list li { margin: 6px 0; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      margin-top: 10px;
+      background: #fff;
+    }
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .col-8, .col-4 { grid-column: span 12; }
+      nav ul { justify-content: flex-start; }
+      table { min-width: 640px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV integrates the new sitemap using current site URLs -->
+  <header>
+    <div class="wrap">
+<nav aria-label="Primary">
+  <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="about-the-foundry.html">About the Foundry</a></li>
+    <li><a href="what-we-offer.html">What We Offer</a></li>
+    <li><a href="access-training.html">Access & Training</a></li>
+    <li><a href="services-pricing.html">Services & Pricing</a></li>
+    <li><a href="staff-leadership.html">Staff & Leadership</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+</nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- HERO -->
+      <div class="hero-card">
+        <span class="kicker">Services &amp; Pricing</span>
+        <h1>Rates for access, staff support, and instrument use</h1>
+        <p class="lead">
+          Pricing is listed by user category (Internal, Academic, Industrial). Use the selector to highlight the column that applies to you.
+          If you’re unsure which category fits, contact us and we’ll confirm quickly.
+        </p>
+
+        <div class="btnrow" role="group" aria-label="Top actions">
+          <a class="btn primary" href="/biodevice-foundry/nemo-login/">NEMO Login</a>
+          <a class="btn" href="/biodevice-foundry/capabilities/user-training-2/">Access &amp; Training</a>
+          <a class="btn utility" href="/biodevice-foundry/contact-us/">Ask about pricing</a>
+        </div>
+
+        <p class="sublead">
+          Note: some items (e.g., special materials) may be quoted case-by-case depending on requirements.
+        </p>
+      </div>
+
+      <!-- Selector -->
+      <section>
+        <div class="grid">
+          <div class="card col-12">
+            <h2>Highlight rates for your user type</h2>
+            <p class="muted" style="margin-bottom:10px;">
+              Choose one to visually highlight the relevant column in the tables below.
+            </p>
+            <div class="selector" role="group" aria-label="User type selector">
+              <button class="seg" type="button" data-focus="internal" aria-pressed="true">Internal</button>
+              <button class="seg" type="button" data-focus="academic" aria-pressed="false">Academic</button>
+              <button class="seg" type="button" data-focus="industrial" aria-pressed="false">Industrial</button>
+            </div>
+            <div class="note">Tip: scroll sideways on small screens to see all columns.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Facility rates -->
+      <section id="facility-rates">
+        <div class="grid">
+          <div class="card col-12">
+            <h2>Facility and service rates</h2>
+            <p class="muted">These apply to onboarding, access, staff support, and common consumables.</p>
+
+            <div class="table-wrap" aria-label="Facility and service rates table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Resource</th>
+                    <th class="head-internal">Internal</th>
+                    <th class="head-academic">Academic</th>
+                    <th class="head-industrial">Industrial</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Startup fee (add gown, hood, boots)</td>
+                    <td class="col-internal">$300</td>
+                    <td class="col-academic">$300</td>
+                    <td class="col-industrial">$300</td>
+                  </tr>
+                  <tr>
+                    <td>Gown cleaning fee (every 3 to 4 weeks)</td>
+                    <td class="col-internal">$7/cleaning</td>
+                    <td class="col-academic">$7/cleaning</td>
+                    <td class="col-industrial">$7/cleaning</td>
+                  </tr>
+                  <tr>
+                    <td>Monthly access fee</td>
+                    <td class="col-internal">$40/month</td>
+                    <td class="col-academic">$40/month</td>
+                    <td class="col-industrial">$60/month</td>
+                  </tr>
+                  <tr>
+                    <td>Training and staff support</td>
+                    <td class="col-internal">$40/hr</td>
+                    <td class="col-academic">$40/hr</td>
+                    <td class="col-industrial">$90/hr</td>
+                  </tr>
+                  <tr>
+                    <td>Custom processing by staff</td>
+                    <td class="col-internal">$75/hr</td>
+                    <td class="col-academic">$100/hr</td>
+                    <td class="col-industrial">$175/hr</td>
+                  </tr>
+                  <tr>
+                    <td>Locker rental fee</td>
+                    <td class="col-internal">$15/month</td>
+                    <td class="col-academic">$15/month</td>
+                    <td class="col-industrial">$25/month</td>
+                  </tr>
+                  <tr>
+                    <td>Cleanroom notebook</td>
+                    <td class="col-internal">$15/each</td>
+                    <td class="col-academic">$15/each</td>
+                    <td class="col-industrial">$15/each</td>
+                  </tr>
+                  <tr>
+                    <td>Safety goggles</td>
+                    <td class="col-internal">$10/each</td>
+                    <td class="col-academic">$10/each</td>
+                    <td class="col-industrial">$10/each</td>
+                  </tr>
+                  <tr>
+                    <td>Deposition materials</td>
+                    <td class="col-internal muted">Case-by-case</td>
+                    <td class="col-academic muted">Case-by-case</td>
+                    <td class="col-industrial muted">Case-by-case</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="note">
+              Deposition materials are typically quoted based on material and process needs.
+              If you have a target material and thickness range, include that in your inquiry.
+            </div>
+
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/contact-us/">Request a quote / confirm category</a>
+              <a class="btn" href="/biodevice-foundry/capabilities/design-services/">Design Services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instrument rates -->
+      <section id="instrument-rates">
+        <div class="grid">
+          <div class="card col-12">
+            <h2>Instrument hourly rates</h2>
+            <p class="muted">Hourly rates for common instruments and tools.</p>
+
+            <div class="table-wrap" aria-label="Instrument hourly rates table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Instrument</th>
+                    <th class="head-internal">Internal</th>
+                    <th class="head-academic">Academic</th>
+                    <th class="head-industrial">Industrial</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Mask aligner</td><td class="col-internal">$30/hr</td><td class="col-academic">$30/hr</td><td class="col-industrial">$60/hr</td></tr>
+                  <tr><td>Direct laser writer</td><td class="col-internal">$40/hr</td><td class="col-academic">$50/hr</td><td class="col-industrial">$90/hr</td></tr>
+                  <tr><td>DRIE</td><td class="col-internal">$60/hr</td><td class="col-academic">$80/hr</td><td class="col-industrial">$150/hr</td></tr>
+                  <tr><td>Plasma cleaner</td><td class="col-internal">$10/hr</td><td class="col-academic">$10/hr</td><td class="col-industrial">$20/hr</td></tr>
+                  <tr><td>Microscope</td><td class="col-internal">$20/hr</td><td class="col-academic">$25/hr</td><td class="col-industrial">$40/hr</td></tr>
+                  <tr><td>Dektak profilometer</td><td class="col-internal">$25/hr</td><td class="col-academic">$35/hr</td><td class="col-industrial">$75/hr</td></tr>
+                  <tr><td>Goniometer</td><td class="col-internal">$10/hr</td><td class="col-academic">$10/hr</td><td class="col-industrial">$20/hr</td></tr>
+                  <tr><td>Rheometer</td><td class="col-internal">$22/hr</td><td class="col-academic">$30/hr</td><td class="col-industrial">$60/hr</td></tr>
+                  <tr><td>Sonicator</td><td class="col-internal">$0</td><td class="col-academic">$0</td><td class="col-industrial">$0</td></tr>
+                  <tr><td>Spin coater</td><td class="col-internal">$10/hr</td><td class="col-academic">$10/hr</td><td class="col-industrial">$20/hr</td></tr>
+                  <tr><td>Ovens (vacuum)</td><td class="col-internal">$5/hr</td><td class="col-academic">$10/hr</td><td class="col-industrial">$15/hr</td></tr>
+                  <tr><td>Wetbenches</td><td class="col-internal">$30/hr</td><td class="col-academic">$40/hr</td><td class="col-industrial">$60/hr</td></tr>
+                  <tr><td>3D FDM printer</td><td class="col-internal">$4/hr</td><td class="col-academic">$4/hr</td><td class="col-industrial">$20/hr</td></tr>
+                  <tr><td>3D SLA printer</td><td class="col-internal">$4/hr</td><td class="col-academic">$4/hr</td><td class="col-industrial">$20/hr</td></tr>
+                  <tr><td>Grinder/polisher</td><td class="col-internal">$30/hr</td><td class="col-academic">$40/hr</td><td class="col-industrial">$70/hr</td></tr>
+                  <tr><td>Dicing saw</td><td class="col-internal">$35/hr</td><td class="col-academic">$50/hr</td><td class="col-industrial">$105/hr</td></tr>
+                  <tr><td>Hot plate</td><td class="col-internal">$15/hr</td><td class="col-academic">$15/hr</td><td class="col-industrial">$25/hr</td></tr>
+                  <tr><td>Laser cutter</td><td class="col-internal">$40/hr</td><td class="col-academic">$40/hr</td><td class="col-industrial">$90/hr</td></tr>
+                  <tr><td>4-point probe</td><td class="col-internal">$30/hr</td><td class="col-academic">$40/hr</td><td class="col-industrial">$90/hr</td></tr>
+                  <tr><td>Parylene coater (find another supplier)</td><td class="col-internal">$50/hr</td><td class="col-academic">$80/hr</td><td class="col-industrial">$120/hr</td></tr>
+                  <tr><td>Microarray printer and microdispensing system</td><td class="col-internal muted">Contact us</td><td class="col-academic muted">Contact us</td><td class="col-industrial muted">Contact us</td></tr>
+                  <tr><td>microCNC machine</td><td class="col-internal muted">Contact us</td><td class="col-academic muted">Contact us</td><td class="col-industrial muted">Contact us</td></tr>
+                  <tr><td>Optical profilometer</td><td class="col-internal muted">Contact us</td><td class="col-academic muted">Contact us</td><td class="col-industrial muted">Contact us</td></tr>
+                  <tr><td>SEM sample coater</td><td class="col-internal muted">Contact us</td><td class="col-academic muted">Contact us</td><td class="col-industrial muted">Contact us</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="note">
+              Some specialty tools are listed without posted rates. For these, contact us with your intended use and we’ll confirm availability and pricing.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What counts as “services” -->
+      <section id="services">
+        <div class="grid">
+          <div class="card col-8">
+            <h2>Services</h2>
+            <p>
+              In addition to instrument access, the Foundry supports users through staff-assisted workflows and project guidance.
+              This is especially useful if you’re new to the processes, need faster iteration, or have complex constraints.
+            </p>
+            <ul class="inline-list">
+              <li>Training and staff support (hourly)</li>
+              <li>Custom processing by staff (hourly)</li>
+              <li>Design Services (see details)</li>
+            </ul>
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/capabilities/design-services/">Design Services</a>
+              <a class="btn" href="/biodevice-foundry/contact-us/">Discuss a project</a>
+            </div>
+          </div>
+
+          <div class="card soft col-4">
+            <h2>Billing questions</h2>
+            <p class="muted">
+              If you need a cost estimate, include: user category, instruments needed, expected hours, materials, and whether you need staff assistance.
+            </p>
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/contact-us/">Request estimate</a>
+              <a class="btn" href="/biodevice-foundry/capabilities/">What we offer</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section>
+        <div class="grid">
+          <div class="card soft col-12">
+            <h2>Want a quick, accurate quote?</h2>
+            <p class="muted">
+              Send us a short description of what you want to do (tools/processes, estimated hours, materials, and timeline) and we’ll respond with the best pricing path.
+            </p>
+            <div class="btnrow">
+              <a class="btn primary" href="/biodevice-foundry/contact-us/">Contact us</a>
+              <a class="btn" href="/biodevice-foundry/nemo-login/">NEMO Login</a>
+              <a class="btn" href="/biodevice-foundry/capabilities/user-training-2/">Access & Training</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-row">
+        <div>
+          <strong>Conconi Family BioDevice Foundry</strong><br />
+          <span class="muted">University of British Columbia</span>
+        </div>
+        <div class="muted">© <span id="year"></span> BioDevice Foundry</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Column highlight selector
+    const buttons = document.querySelectorAll('.seg');
+
+    function setFocus(which) {
+      // button pressed state
+      buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.focus === which)));
+
+      // clear previous highlights
+      document.querySelectorAll('.focus-col').forEach(el => el.classList.remove('focus-col'));
+      document.querySelectorAll('.focus-head').forEach(el => el.classList.remove('focus-head'));
+
+      // apply highlight to selected column cells + header
+      const head = document.querySelectorAll('.head-' + which);
+      head.forEach(el => el.classList.add('focus-head'));
+
+      const cells = document.querySelectorAll('.col-' + which);
+      cells.forEach(el => el.classList.add('focus-col'));
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => setFocus(btn.dataset.focus));
+    });
+
+    // default
+    setFocus('internal');
+  </script>
+</body>
+</html>

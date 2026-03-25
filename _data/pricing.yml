@@ -1,0 +1,140 @@
+facility_rates:
+  - resource: Startup fee (add gown, hood, boots)
+    internal: "$300"
+    academic: "$300"
+    industrial: "$300"
+  - resource: Gown cleaning fee (every 3 to 4 weeks)
+    internal: "$7/cleaning"
+    academic: "$7/cleaning"
+    industrial: "$7/cleaning"
+  - resource: Monthly access fee
+    internal: "$40/month"
+    academic: "$40/month"
+    industrial: "$60/month"
+  - resource: Training and staff support
+    internal: "$40/hr"
+    academic: "$40/hr"
+    industrial: "$90/hr"
+  - resource: Custom processing by staff
+    internal: "$75/hr"
+    academic: "$100/hr"
+    industrial: "$175/hr"
+  - resource: Locker rental fee
+    internal: "$15/month"
+    academic: "$15/month"
+    industrial: "$25/month"
+  - resource: Cleanroom notebook
+    internal: "$15/each"
+    academic: "$15/each"
+    industrial: "$15/each"
+  - resource: Safety goggles
+    internal: "$10/each"
+    academic: "$10/each"
+    industrial: "$10/each"
+  - resource: Deposition materials
+    internal: "Case-by-case"
+    academic: "Case-by-case"
+    industrial: "Case-by-case"
+    muted: true
+
+instrument_rates:
+  - instrument: Mask aligner
+    internal: "$30/hr"
+    academic: "$30/hr"
+    industrial: "$60/hr"
+  - instrument: Direct laser writer
+    internal: "$40/hr"
+    academic: "$50/hr"
+    industrial: "$90/hr"
+  - instrument: DRIE
+    internal: "$60/hr"
+    academic: "$80/hr"
+    industrial: "$150/hr"
+  - instrument: Plasma cleaner
+    internal: "$10/hr"
+    academic: "$10/hr"
+    industrial: "$20/hr"
+  - instrument: Microscope
+    internal: "$20/hr"
+    academic: "$25/hr"
+    industrial: "$40/hr"
+  - instrument: Dektak profilometer
+    internal: "$25/hr"
+    academic: "$35/hr"
+    industrial: "$75/hr"
+  - instrument: Goniometer
+    internal: "$10/hr"
+    academic: "$10/hr"
+    industrial: "$20/hr"
+  - instrument: Rheometer
+    internal: "$22/hr"
+    academic: "$30/hr"
+    industrial: "$60/hr"
+  - instrument: Sonicator
+    internal: "$0"
+    academic: "$0"
+    industrial: "$0"
+  - instrument: Spin coater
+    internal: "$10/hr"
+    academic: "$10/hr"
+    industrial: "$20/hr"
+  - instrument: Ovens (vacuum)
+    internal: "$5/hr"
+    academic: "$10/hr"
+    industrial: "$15/hr"
+  - instrument: Wetbenches
+    internal: "$30/hr"
+    academic: "$40/hr"
+    industrial: "$60/hr"
+  - instrument: 3D FDM printer
+    internal: "$4/hr"
+    academic: "$4/hr"
+    industrial: "$20/hr"
+  - instrument: 3D SLA printer
+    internal: "$4/hr"
+    academic: "$4/hr"
+    industrial: "$20/hr"
+  - instrument: Grinder/polisher
+    internal: "$30/hr"
+    academic: "$40/hr"
+    industrial: "$70/hr"
+  - instrument: Dicing saw
+    internal: "$35/hr"
+    academic: "$50/hr"
+    industrial: "$105/hr"
+  - instrument: Hot plate
+    internal: "$15/hr"
+    academic: "$15/hr"
+    industrial: "$25/hr"
+  - instrument: Laser cutter
+    internal: "$40/hr"
+    academic: "$40/hr"
+    industrial: "$90/hr"
+  - instrument: 4-point probe
+    internal: "$30/hr"
+    academic: "$40/hr"
+    industrial: "$90/hr"
+  - instrument: Parylene coater (find another supplier)
+    internal: "$50/hr"
+    academic: "$80/hr"
+    industrial: "$120/hr"
+  - instrument: Microarray printer and microdispensing system
+    internal: Contact us
+    academic: Contact us
+    industrial: Contact us
+    muted: true
+  - instrument: microCNC machine
+    internal: Contact us
+    academic: Contact us
+    industrial: Contact us
+    muted: true
+  - instrument: Optical profilometer
+    internal: Contact us
+    academic: Contact us
+    industrial: Contact us
+    muted: true
+  - instrument: SEM sample coater
+    internal: Contact us
+    academic: Contact us
+    industrial: Contact us
+    muted: true

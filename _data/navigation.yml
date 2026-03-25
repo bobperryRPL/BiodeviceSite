@@ -1,0 +1,15 @@
+primary:
+  - title: Home
+    url: /
+  - title: About the Foundry
+    url: /about-the-foundry/
+  - title: What We Offer
+    url: /what-we-offer/
+  - title: Access & Training
+    url: /access-training/
+  - title: Services & Pricing
+    url: /services-pricing/
+  - title: Staff & Leadership
+    url: /staff-leadership/
+  - title: Contact
+    url: /contact/

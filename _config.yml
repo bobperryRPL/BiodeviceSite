@@ -1,9 +1,28 @@
-title: My Site
-description: A basic Jekyll + Decap CMS site
+title: Conconi Family BioDevice Foundry
+description: Shared research facility at UBC for biomedical device fabrication, prototyping, biofunctionalization, and characterization.
 baseurl: ""
 url: ""
 
 markdown: kramdown
+permalink: pretty
+
+collections:
+  capabilities:
+    output: true
+    permalink: /capabilities/:name/
+  staff:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: capabilities
+    values:
+      layout: capability
 
 include:
   - admin
