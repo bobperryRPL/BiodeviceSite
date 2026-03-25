@@ -20,7 +20,7 @@ requirements:
   - Complete required training
   - Follow cleanroom and chemical handling protocols
   - Book time if self-serve or request staff support
-placeholder_notes: Placeholder: add lithography tool list, resist families, substrate sizes, typical minimum feature sizes, alignment capability, and supported materials here.
+placeholder_notes: "Placeholder: add lithography tool list, resist families, substrate sizes, typical minimum feature sizes, alignment capability, and supported materials here."
 related:
   - plasma-etch
   - thin-film-deposition

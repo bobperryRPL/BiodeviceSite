@@ -19,7 +19,7 @@ requirements:
   - Complete shop and machine training
   - Follow approved CAM and safety workflows
   - Confirm material compatibility and tolerances
-placeholder_notes: Placeholder: add CNC model details, machining envelope, supported materials, typical tolerances, CAM workflow notes, and shop rules here.
+placeholder_notes: "Placeholder: add CNC model details, machining envelope, supported materials, typical tolerances, CAM workflow notes, and shop rules here."
 related:
   - 3d-printing
   - laser-cutting

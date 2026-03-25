@@ -19,7 +19,7 @@ requirements:
   - Complete required printer training
   - Use approved material families
   - Confirm cleaning and post-processing requirements
-placeholder_notes: Placeholder: add printer types, build volumes, material families, post-processing options, and thermal or solvent limits here.
+placeholder_notes: "Placeholder: add printer types, build volumes, material families, post-processing options, and thermal or solvent limits here."
 related:
   - cnc-machining
   - laser-cutting

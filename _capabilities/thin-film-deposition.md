@@ -19,7 +19,7 @@ requirements:
   - Complete required training
   - Confirm material compatibility and process fit
   - Coordinate staff support for specialized workflows
-placeholder_notes: Placeholder: add deposition tool types, supported materials, substrate sizes, typical thickness ranges, and process constraints here.
+placeholder_notes: "Placeholder: add deposition tool types, supported materials, substrate sizes, typical thickness ranges, and process constraints here."
 related:
   - lithography
   - plasma-etch

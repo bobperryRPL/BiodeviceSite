@@ -19,7 +19,7 @@ requirements:
   - Complete required training
   - Follow material handling and cleanliness protocols
   - Confirm bonding and curing workflow needs
-placeholder_notes: Placeholder: add mixers, degassers, ovens, bonding guidance, best practices, and any restricted materials here.
+placeholder_notes: "Placeholder: add mixers, degassers, ovens, bonding guidance, best practices, and any restricted materials here."
 related:
   - lithography
   - plasma-etch

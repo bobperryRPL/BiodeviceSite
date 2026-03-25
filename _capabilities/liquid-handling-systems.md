@@ -19,7 +19,7 @@ requirements:
   - Complete tool-specific training
   - Follow cleaning and contamination controls
   - Confirm volume range and workflow fit
-placeholder_notes: Placeholder: add tool list, pipetting and dispensing ranges, automation options, and cleaning constraints here.
+placeholder_notes: "Placeholder: add tool list, pipetting and dispensing ranges, automation options, and cleaning constraints here."
 related:
   - surface-chemistry
   - pdms-preparation-station

@@ -19,7 +19,7 @@ requirements:
   - Complete required training
   - Confirm sample size and compatibility
   - Follow booking and handling procedures
-placeholder_notes: Placeholder: add tool list, what each method is best for, sample size constraints, and booking rules here.
+placeholder_notes: "Placeholder: add tool list, what each method is best for, sample size constraints, and booking rules here."
 related:
   - lithography
   - thin-film-deposition

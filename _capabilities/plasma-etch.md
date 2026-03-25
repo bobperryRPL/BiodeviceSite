@@ -19,7 +19,7 @@ requirements:
   - Complete tool-specific training
   - Follow cleanroom and process safety rules
   - Confirm sample compatibility before booking
-placeholder_notes: Placeholder: add plasma tool types, supported gases, etch targets, sample size limits, and common process constraints here.
+placeholder_notes: "Placeholder: add plasma tool types, supported gases, etch targets, sample size limits, and common process constraints here."
 related:
   - lithography
   - thin-film-deposition

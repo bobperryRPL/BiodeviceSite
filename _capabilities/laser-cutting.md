@@ -19,7 +19,7 @@ requirements:
   - Complete machine training
   - Use only approved materials
   - Follow ventilation and fire safety rules
-placeholder_notes: Placeholder: add supported materials, max thickness, bed size, restricted materials, and ventilation notes here.
+placeholder_notes: "Placeholder: add supported materials, max thickness, bed size, restricted materials, and ventilation notes here."
 related:
   - cnc-machining
   - 3d-printing

@@ -19,7 +19,7 @@ requirements:
   - Confirm process compatibility and materials
   - Follow assembly and handling protocols
   - Coordinate staff support for specialized bonding or finishing
-placeholder_notes: Placeholder: add dicing notes, bonding and curing options, fixtures, connectors, and packaging constraints here.
+placeholder_notes: "Placeholder: add dicing notes, bonding and curing options, fixtures, connectors, and packaging constraints here."
 related:
   - cnc-machining
   - 3d-printing

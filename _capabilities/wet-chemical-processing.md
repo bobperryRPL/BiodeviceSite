@@ -19,7 +19,7 @@ requirements:
   - Complete chemical safety training
   - Use approved materials and compatible chemistries
   - Follow wet bench and PPE requirements
-placeholder_notes: Placeholder: add wet benches, compatible chemistries, etch types, sample sizes, and safety notes here.
+placeholder_notes: "Placeholder: add wet benches, compatible chemistries, etch types, sample sizes, and safety notes here."
 related:
   - lithography
   - plasma-etch

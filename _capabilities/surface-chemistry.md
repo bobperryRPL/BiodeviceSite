@@ -19,7 +19,7 @@ requirements:
   - Complete required safety training
   - Use approved protocols and chemistries
   - Coordinate with staff for specialized workflows
-placeholder_notes: Placeholder: add fume hood capabilities, silanization or corona dependencies, typical protocols offered, and process limits here.
+placeholder_notes: "Placeholder: add fume hood capabilities, silanization or corona dependencies, typical protocols offered, and process limits here."
 related:
   - pdms-preparation-station
   - plasma-etch
