@@ -42,7 +42,9 @@ hero_actions:
         <li>Follow signage for the BioDevice Foundry to room B1130.</li>
         <li>If you cannot find it, contact the team for wayfinding help.</li>
       </ul>
-      <p class="muted" style="margin-top:10px;">Placeholder: add a floor map image or photo landmarks later if needed.</p>
+      <div style="margin-top:14px;">
+        {% include placeholder-image.html eyebrow="Expected map or photo" title="Wayfinding reference image" text="This is where a floor map, entrance photo, or landmark sequence would normally appear to help visitors find the facility." alt="Placeholder for wayfinding reference image" %}
+      </div>
     </div>
   </div>
 </section>

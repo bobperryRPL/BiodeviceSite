@@ -1,0 +1,8 @@
+<figure class="placeholder-figure{% if include.class %} {{ include.class }}{% endif %}">
+  <img src="{{ '/assets/placeholder.jpeg' | relative_url }}" alt="{{ include.alt | default: include.title }}" />
+  <figcaption>
+    {% if include.eyebrow %}<span class="placeholder-eyebrow">{{ include.eyebrow }}</span>{% endif %}
+    <strong>{{ include.title }}</strong>
+    {% if include.text %}<span>{{ include.text }}</span>{% endif %}
+  </figcaption>
+</figure>

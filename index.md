@@ -23,7 +23,15 @@ hero_actions:
       <p>We support projects that require precision fabrication, rapid prototyping, surface chemistry, and device characterization with access to specialized equipment and expert staff.</p>
       <p class="muted">Whether you are developing a microfluidic chip, biosensor, implantable component, or custom research tool, the Foundry provides the infrastructure and support to move your work forward.</p>
     </div>
-    <div class="card soft col-5">
+    <div class="col-5">
+      {% include placeholder-image.html eyebrow="Expected image" title="Facility overview photo" text="This is where a high-quality image of the lab or cleanroom entry would normally appear on the homepage." alt="Placeholder for facility overview photo" %}
+    </div>
+  </div>
+</section>
+
+<section id="quick-links">
+  <div class="grid">
+    <div class="card soft col-12">
       <h2>Quick links</h2>
       <p class="muted">Get where you need to go in one click.</p>
       <div class="btnrow">
@@ -75,6 +83,20 @@ hero_actions:
     <div class="card soft col-5">
       <h2>Good to know</h2>
       <p class="muted">You do not need to arrive with a perfect process plan. If you can describe your goal and constraints, the team can help identify the right path whether that is self-serve equipment access, staff-assisted services, or a hybrid approach.</p>
+    </div>
+  </div>
+</section>
+
+<section id="visual-highlights">
+  <div class="grid">
+    <div class="col-4">
+      {% include placeholder-image.html eyebrow="Expected image" title="Equipment close-up" text="A homepage highlight image for a signature tool or fabrication setup would usually go here." alt="Placeholder for equipment close-up" %}
+    </div>
+    <div class="col-4">
+      {% include placeholder-image.html eyebrow="Expected image" title="Team or user training photo" text="This would usually show staff assisting users or training happening in the facility." alt="Placeholder for staff or user training photo" %}
+    </div>
+    <div class="col-4">
+      {% include placeholder-image.html eyebrow="Expected diagram" title="Capabilities or process diagram" text="A concise visual explaining fabrication, biofunctionalization, prototyping, and characterization would fit here." alt="Placeholder for capabilities diagram" %}
     </div>
   </div>
 </section>

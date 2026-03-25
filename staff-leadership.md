@@ -16,26 +16,36 @@ hero_actions:
 {% for person in people %}
   <section>
     <div class="grid">
-      <div class="card{% if forloop.first %} col-8{% else %} col-12{% endif %}">
+      <div class="col-4">
+        {% include placeholder-image.html eyebrow="Expected portrait" title=person.title text="Staff and leadership pages normally include a portrait or in-lab photo for each team member." alt=person.title %}
+      </div>
+      <div class="card col-8">
         <h2>{{ person.title }}</h2>
         <p class="muted"><strong>{{ person.role }}</strong></p>
         {% for paragraph in person.bio %}
           <p{% if forloop.last %} class="muted"{% endif %}>{{ paragraph }}</p>
         {% endfor %}
       </div>
-      {% if forloop.first %}
-        <div class="card soft col-4">
-          <h2>Helpful links</h2>
-          <p class="muted">For onboarding and bookings:</p>
-          <div class="btnrow">
-            <a class="btn" href="{{ '/access-training/' | relative_url }}">Access & Training</a>
-            <a class="btn" href="{{ '/nemo-login/' | relative_url }}">NEMO Login</a>
-          </div>
-        </div>
-      {% endif %}
     </div>
   </section>
 {% endfor %}
+
+<section>
+  <div class="grid">
+    <div class="card soft col-12">
+      <h2>Expected supporting visuals</h2>
+      <p class="muted">In addition to portraits, a staff page usually benefits from one or two candid images of the team in the facility or supporting users at equipment.</p>
+      <div class="grid" style="margin-top:14px;">
+        <div class="col-6">
+          {% include placeholder-image.html eyebrow="Expected image" title="Team in the facility" text="A group or candid lab image would typically appear here." alt="Placeholder for team in the facility" %}
+        </div>
+        <div class="col-6">
+          {% include placeholder-image.html eyebrow="Expected image" title="Staff supporting users" text="A process-support or training photo would usually reinforce the service role of the team." alt="Placeholder for staff supporting users" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="grid">

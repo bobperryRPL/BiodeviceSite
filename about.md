@@ -45,6 +45,17 @@ jump_links:
   </div>
 </section>
 
+<section id="facility-visual">
+  <div class="grid">
+    <div class="col-7">
+      {% include placeholder-image.html eyebrow="Expected image" title="Facility overview or cleanroom interior" text="About pages usually include a wide environment image showing the space, scale, and research setting." alt="Placeholder for facility overview or cleanroom interior" %}
+    </div>
+    <div class="col-5">
+      {% include placeholder-image.html eyebrow="Expected diagram" title="Facility layout or workflow diagram" text="A simple visual explaining how cleanroom, biofunctionalization, characterization, and prototyping areas connect would fit here." alt="Placeholder for facility layout or workflow diagram" %}
+    </div>
+  </div>
+</section>
+
 <section id="how-we-help">
   <div class="grid">
     <div class="card col-12">
@@ -74,11 +85,7 @@ jump_links:
       </div>
     </div>
     <div class="card soft col-4">
-      <h2>Staff & Leadership</h2>
-      <p class="muted">Looking for the right person to contact? See the Staff & Leadership page for roles and bios.</p>
-      <div class="btnrow">
-        <a class="btn primary" href="{{ '/staff-leadership/' | relative_url }}">View Staff & Leadership</a>
-      </div>
+      {% include placeholder-image.html eyebrow="Expected image" title="Wayfinding or exterior reference image" text="Visitors usually expect a building exterior, entrance, or location photo near the address and hours section." alt="Placeholder for wayfinding or exterior reference image" %}
     </div>
   </div>
 </section>

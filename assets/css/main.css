@@ -322,6 +322,43 @@ section:nth-of-type(even) .card:not(.soft) {
   font-size: 0.95rem;
 }
 
+.placeholder-figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbfe 100%);
+  box-shadow: var(--shadow);
+}
+
+.placeholder-figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #dceaf3;
+}
+
+.placeholder-figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px 16px;
+  color: var(--brand-navy);
+}
+
+.placeholder-figure figcaption span {
+  color: var(--muted);
+}
+
+.placeholder-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-blue);
+}
+
 .table-wrap {
   overflow-x: auto;
   border: 1px solid var(--border);
