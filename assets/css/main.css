@@ -670,18 +670,22 @@ textarea {
 #ubc7-global-footer {
   background: #002145;
   color: #fff;
-  padding: 18px 0;
+  padding: 24px 0 28px;
 }
 
-.ubc7-global-footer-row {
+.ubc7-global-footer-grid {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 24px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
-.ubc7-global-footer-brand {
+#ubc7-signature {
+  flex: 0 1 320px;
+}
+
+#ubc7-signature a {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.98rem;
@@ -689,23 +693,45 @@ textarea {
   text-decoration: none;
 }
 
-.ubc7-footer-links {
-  list-style: none;
-  display: flex;
-  gap: 14px;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
+#ubc7-footer-menu {
+  flex: 1 1 520px;
 }
 
-.ubc7-footer-links a {
+.ubc7-footer-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+#ubc7-footer-menu h3,
+#ubc7-footer-menu h4 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+#ubc7-footer-menu h3 {
+  font-size: 1rem;
+}
+
+#ubc7-footer-menu h4 {
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+#ubc7-footer-menu div + div {
+  margin-top: 6px;
+}
+
+#ubc7-footer-menu a {
   color: rgba(255, 255, 255, 0.92);
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   text-decoration: none;
 }
 
-.ubc7-footer-links a:hover,
-.ubc7-global-footer-brand:hover {
+#ubc7-footer-menu a:hover,
+#ubc7-signature a:hover {
   text-decoration: underline;
 }
 
@@ -779,6 +805,14 @@ textarea {
     padding: 12px 0;
     border-top: 0;
     border-bottom: 1px solid #d7e0ea;
+  }
+
+  .ubc7-global-footer-grid {
+    flex-direction: column;
+  }
+
+  .ubc7-footer-menu-grid {
+    grid-template-columns: 1fr;
   }
 
   table {
