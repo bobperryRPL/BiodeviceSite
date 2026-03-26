@@ -117,7 +117,14 @@ a:hover {
   height: auto;
 }
 
-.ubc7-global-wordmark {
+.ubc7-global-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.16rem;
+}
+
+.ubc7-global-wordmark,
+.ubc7-global-campus {
   display: inline-flex;
   align-items: baseline;
   gap: 0.35rem;
@@ -130,10 +137,15 @@ a:hover {
 
 .ubc7-global-wordmark span:first-child {
   font-size: 0.88rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .ubc7-global-wordmark span:last-child {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.ubc7-global-campus {
   font-size: 0.88rem;
   font-weight: 700;
 }
@@ -159,7 +171,7 @@ a:hover {
 }
 
 #ubc7-unit {
-  background: linear-gradient(180deg, #0f2b4a 0%, #001b39 100%);
+  background: linear-gradient(180deg, #2f5d7c 0%, #2f5d7c 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -719,6 +731,10 @@ textarea {
   .ubc7-global-wordmark {
     font-size: 0.78rem;
     gap: 0.25rem;
+  }
+
+  .ubc7-global-campus {
+    font-size: 0.78rem;
   }
 
   .ubc7-global-wordmark span:first-child,
