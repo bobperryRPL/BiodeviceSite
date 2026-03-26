@@ -2,19 +2,21 @@
   --maxw: 1100px;
   --pad: 20px;
   --radius: 14px;
-  --border: #c8d7e6;
-  --muted: #49607d;
-  --bg: #edf4f8;
-  --bg-soft: #f3f8fc;
-  --text: #002145;
+  --border: #9db6d1;
+  --muted: #38516f;
+  --bg: #e5eef7;
+  --bg-soft: #eef4fa;
+  --text: #001b39;
   --brand-navy: #002145;
-  --brand-blue: #0055b7;
-  --brand-sky: #40b4e5;
-  --brand-mist: #97d4e9;
+  --brand-blue: #004ea8;
+  --brand-sky: #2f86c9;
+  --brand-mist: #9fc5e8;
+  --brand-red: #b01c2e;
+  --brand-red-soft: #f3d8dc;
   --brand-gold: #f2a900;
   --panel: #ffffff;
-  --panel-soft: #f7fbfe;
-  --shadow: 0 12px 28px rgba(0, 33, 69, 0.1);
+  --panel-soft: #f2f7fb;
+  --shadow: 0 14px 32px rgba(0, 33, 69, 0.12);
 }
 
 * {
@@ -32,10 +34,11 @@ body {
   color: var(--text);
   background: var(--bg);
   background-image:
-    radial-gradient(circle at top left, rgba(64, 180, 229, 0.12), transparent 30%),
+    radial-gradient(circle at top left, rgba(176, 28, 46, 0.1), transparent 24%),
+    radial-gradient(circle at top right, rgba(47, 134, 201, 0.12), transparent 28%),
     linear-gradient(rgba(255, 255, 255, 0.42) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.42) 1px, transparent 1px);
-  background-size: auto, 32px 32px, 32px 32px;
+  background-size: auto, auto, 32px 32px, 32px 32px;
   background-attachment: fixed;
 }
 
@@ -112,8 +115,8 @@ nav li a {
 
 nav li a:hover,
 nav li a[aria-current="page"] {
-  background: #e8f1f8;
-  color: var(--brand-navy);
+  background: rgba(176, 28, 46, 0.1);
+  color: var(--brand-red);
   text-decoration: none;
 }
 
@@ -128,8 +131,8 @@ nav li a[aria-current="page"] {
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 88% 10%, rgba(242, 169, 0, 0.08), transparent 16%),
-    radial-gradient(circle at 12% 78%, rgba(64, 180, 229, 0.08), transparent 20%);
+    radial-gradient(circle at 88% 10%, rgba(176, 28, 46, 0.1), transparent 18%),
+    radial-gradient(circle at 12% 78%, rgba(47, 134, 201, 0.1), transparent 22%);
   z-index: -1;
 }
 
@@ -148,8 +151,9 @@ section {
 
 .hero-card {
   background:
-    linear-gradient(135deg, rgba(151, 212, 233, 0.22), transparent 44%),
-    linear-gradient(180deg, #e7f3fb 0%, #ffffff 100%);
+    linear-gradient(135deg, rgba(176, 28, 46, 0.12), transparent 36%),
+    linear-gradient(210deg, rgba(47, 134, 201, 0.18), transparent 38%),
+    linear-gradient(180deg, #edf4fb 0%, #ffffff 100%);
   padding: 28px;
 }
 
@@ -165,9 +169,9 @@ section {
 .kicker {
   display: inline-block;
   font-weight: 650;
-  color: var(--brand-navy);
-  background: #eef6fb;
-  border: 1px solid #b5d7ea;
+  color: var(--brand-red);
+  background: var(--brand-red-soft);
+  border: 1px solid #d89da7;
   padding: 6px 10px;
   border-radius: 999px;
   margin-bottom: 12px;
@@ -251,7 +255,7 @@ section:nth-of-type(even) .card:not(.soft) {
 
 .btn.primary,
 .seg[aria-pressed="true"] {
-  background: var(--brand-blue);
+  background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-blue) 100%);
   color: #fff;
   border-color: var(--brand-blue);
 }
@@ -265,7 +269,7 @@ section:nth-of-type(even) .card:not(.soft) {
 .btn:hover,
 .pill:hover,
 .seg:hover {
-  background: #eef6fb;
+  background: #e8f0f8;
   text-decoration: none;
 }
 
@@ -306,7 +310,7 @@ section:nth-of-type(even) .card:not(.soft) {
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 14px;
-  background: linear-gradient(180deg, #ffffff 0%, #f6fbfe 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f2f7fb 100%);
   transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
 
@@ -356,7 +360,7 @@ section:nth-of-type(even) .card:not(.soft) {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--brand-blue);
+  color: var(--brand-red);
 }
 
 .table-wrap {
@@ -387,15 +391,16 @@ th {
 }
 
 tbody tr:nth-child(odd) td {
-  background: #fafafb;
+  background: #f8fbfe;
 }
 
 .focus-col {
-  background: #e8f3fb !important;
+  background: #e4eef9 !important;
 }
 
 .focus-head {
-  background: #cfe8f6 !important;
+  background: var(--brand-red-soft) !important;
+  color: var(--brand-red);
 }
 
 .fieldgrid {
@@ -451,7 +456,7 @@ textarea {
 }
 
 .site-footer {
-  border-top: 4px solid var(--brand-gold);
+  border-top: 4px solid var(--brand-red);
   padding: 28px 0;
   margin-top: 10px;
   background: var(--brand-navy);
