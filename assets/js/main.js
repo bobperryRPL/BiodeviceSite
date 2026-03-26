@@ -10,6 +10,7 @@ if (navToggle && primaryNav) {
     const expanded = navToggle.getAttribute("aria-expanded") === "true";
     navToggle.setAttribute("aria-expanded", String(!expanded));
     primaryNav.classList.toggle("open", !expanded);
+    primaryNav.classList.toggle("in", !expanded);
   });
 }
 
