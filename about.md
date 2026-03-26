@@ -56,6 +56,27 @@ jump_links:
   </div>
 </section>
 
+<section id="virtual-tour">
+  <div class="grid">
+    <div class="card col-12">
+      <h2>Virtual Tour</h2>
+      <p>Explore the facility virtually using the embedded tour below. If the tour does not load in this page, open it directly in a new tab.</p>
+      <div class="embed-frame">
+        <iframe
+          src="https://portal.nucleus4d.com/?session=152bcdc1-35d4-4764-aa25-9df63d63819d"
+          title="Conconi Family BioDevice Foundry virtual tour"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="btnrow">
+        <a class="btn primary" href="https://portal.nucleus4d.com/?session=152bcdc1-35d4-4764-aa25-9df63d63819d" target="_blank" rel="noreferrer">Open Virtual Tour</a>
+      </div>
+      <p class="note">Some tour providers restrict embedding. If you see a blank frame or an access message, use the button above.</p>
+    </div>
+  </div>
+</section>
+
 <section id="how-we-help">
   <div class="grid">
     <div class="card col-12">
