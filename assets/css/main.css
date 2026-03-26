@@ -209,11 +209,16 @@ section:nth-of-type(even) .card:not(.soft) {
   background: var(--panel);
   font: inherit;
   font-weight: var(--weight-semibold);
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    background-image 0.18s ease;
 }
 
 .btn.primary,
 .seg[aria-pressed="true"] {
-  background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-blue) 100%);
+  background: var(--brand-blue);
   color: #fff;
   border-color: var(--brand-blue);
 }
@@ -234,7 +239,8 @@ section:nth-of-type(even) .card:not(.soft) {
 .btn.primary:hover,
 .seg[aria-pressed="true"]:hover {
   opacity: 0.92;
-  background: var(--brand-navy);
+  background-color: var(--brand-navy);
+  background-image: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy) 100%);
 }
 
 .pill {
