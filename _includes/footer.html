@@ -1,13 +1,32 @@
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-row">
-      <div>
-        <strong>{{ site.data.site.title }}</strong><br />
-        <span class="muted">{{ site.data.site.organization }}</span>
+<footer id="ubc7-footer">
+  <div id="ubc7-unit-footer">
+    <div class="wrap ubc7-unit-footer-row">
+      <div id="ubc7-unit-address">
+        <div id="ubc7-address-unit-name">{{ site.data.site.title }}</div>
+        <div id="ubc7-address-campus">Vancouver Campus</div>
+        {% for line in site.data.site.address_lines %}
+          <div>{{ line }}</div>
+        {% endfor %}
+        <div>Tel {{ site.data.site.contact_phone }}</div>
+        <div>Email <a href="mailto:{{ site.data.site.contact_email }}">{{ site.data.site.contact_email }}</a></div>
       </div>
-      <div class="muted">
-        &copy; <span data-year></span> {{ site.data.site.copyright_label }}
+      <div class="ubc7-footer-meta">
+        <div class="ubc7-footer-meta-title">{{ site.data.site.organization }}</div>
+        <div>&copy; <span data-year></span> {{ site.data.site.copyright_label }}</div>
+        <a href="#ubc7-header">Back to top</a>
       </div>
+    </div>
+  </div>
+
+  <div id="ubc7-global-footer">
+    <div class="wrap ubc7-global-footer-row">
+      <a class="ubc7-global-footer-brand" href="https://www.ubc.ca/">The University of British Columbia</a>
+      <ul class="ubc7-footer-links" aria-label="University links">
+        <li><a href="https://cdn.ubc.ca/clf/ref/emergency.html">Emergency Procedures</a></li>
+        <li><a href="https://cdn.ubc.ca/clf/ref/terms.html">Terms of Use</a></li>
+        <li><a href="https://cdn.ubc.ca/clf/ref/copyright.html">Copyright</a></li>
+        <li><a href="https://cdn.ubc.ca/clf/ref/accessibility.html">Accessibility</a></li>
+      </ul>
     </div>
   </div>
 </footer>
