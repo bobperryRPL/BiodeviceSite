@@ -93,6 +93,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 16px;
+  margin-left: 18px;
   color: #fff;
   text-decoration: none;
 }
