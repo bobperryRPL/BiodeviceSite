@@ -16,6 +16,16 @@
         <a href="#ubc7-header">Back to top</a>
       </div>
     </div>
+    <div class="wrap ubc7-footer-nav-row">
+      <div class="ubc7-footer-nav-group">
+        <div class="ubc7-footer-nav-title">Site Links</div>
+        <ul class="ubc7-footer-nav-list" aria-label="Site links">
+          {% for item in site.data.navigation.primary %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
 
   <div id="ubc7-global-footer">
