@@ -2,6 +2,10 @@
   --maxw: 1100px;
   --pad: 20px;
   --radius: 14px;
+  --font-sans: "Whitney-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --weight-book: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
   --border: #9db6d1;
   --muted: #38516f;
   --bg: #e5eef7;
@@ -29,7 +33,8 @@ html {
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-sans);
+  font-weight: var(--weight-book);
   line-height: 1.55;
   color: var(--text);
   background: var(--bg);
@@ -78,13 +83,13 @@ a:hover {
   display: flex;
   align-items: baseline;
   gap: 10px;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   letter-spacing: 0.2px;
   color: var(--brand-navy);
 }
 
 .brand small {
-  font-weight: 600;
+  font-weight: var(--weight-semibold);
   color: var(--muted);
 }
 
@@ -111,6 +116,7 @@ nav li a {
   display: inline-block;
   padding: 8px 10px;
   border-radius: 10px;
+  font-weight: var(--weight-semibold);
 }
 
 nav li a:hover,
@@ -168,7 +174,7 @@ section {
 
 .kicker {
   display: inline-block;
-  font-weight: 650;
+  font-weight: var(--weight-semibold);
   color: var(--brand-red);
   background: var(--brand-red-soft);
   border: 1px solid #d89da7;
@@ -180,6 +186,7 @@ section {
 h1 {
   margin: 0 0 10px;
   font-size: clamp(28px, 4vw, 44px);
+  font-weight: var(--weight-bold);
   line-height: 1.1;
   letter-spacing: -0.6px;
 }
@@ -187,12 +194,14 @@ h1 {
 h2 {
   margin: 0 0 10px;
   font-size: 1.35rem;
+  font-weight: var(--weight-bold);
   letter-spacing: -0.2px;
 }
 
 h3 {
   margin: 0 0 6px;
   font-size: 1.05rem;
+  font-weight: var(--weight-semibold);
 }
 
 .section-heading {
@@ -250,7 +259,7 @@ section:nth-of-type(even) .card:not(.soft) {
   border: 1px solid var(--border);
   background: var(--panel);
   font: inherit;
-  font-weight: 650;
+  font-weight: var(--weight-semibold);
 }
 
 .btn.primary,
@@ -357,7 +366,7 @@ section:nth-of-type(even) .card:not(.soft) {
 
 .placeholder-eyebrow {
   font-size: 0.78rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--brand-red);
@@ -416,7 +425,7 @@ tbody tr:nth-child(odd) td {
 }
 
 label {
-  font-weight: 650;
+  font-weight: var(--weight-semibold);
   font-size: 0.95rem;
 }
 
