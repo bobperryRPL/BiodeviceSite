@@ -4,10 +4,10 @@ permalink: /access-training/
 kicker: Access & Training
 hero_title: Get access, complete training, and book equipment
 description: How to get access, complete training, and book equipment at the Conconi Family BioDevice Foundry.
-lead: Returning user? Start with ClaMacs. New here? Scroll down for the step-by-step onboarding pathway.
+lead: Returning user? Start with ColabMacs Login. New here? Scroll down for the step-by-step onboarding pathway.
 sublead: Access requirements vary by tool, process, and safety category. If you are unsure what applies to your project, contact the team and describe the intended workflow.
 hero_actions:
-  - label: ClaMacs
+  - label: ColabMacs Login
     url: https://colabmacs.com/
     primary: true
   - label: New user steps
@@ -31,12 +31,12 @@ jump_links:
   <div class="grid">
     <div class="card col-8">
       <h2>Returning users</h2>
-      <p>If you already have access, use ClaMacs to manage your account, confirm training status, and book equipment.</p>
+      <p>If you already have access, use ColabMacs Login to manage your account, confirm training status, and book equipment.</p>
       <div class="btnrow">
-        <a class="btn primary" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">Go to ClaMacs</a>
+        <a class="btn primary" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">Go to ColabMacs Login</a>
         <a class="btn" href="#booking">How booking works</a>
       </div>
-      <h3 style="margin-top:18px;">What you can do in ClaMacs</h3>
+      <h3 style="margin-top:18px;">What you can do in ColabMacs Login</h3>
       <ul class="bullets">
         <li>Log in and manage your user profile</li>
         <li>Check training and access permissions</li>
@@ -104,14 +104,14 @@ jump_links:
   <div class="grid">
     <div class="card col-8">
       <h2>Booking and using equipment</h2>
-      <p>Once you have the required training and permissions, you can book equipment when available for self-serve through ClaMacs. For staff-assisted work or specialized workflows, contact the team to coordinate.</p>
+      <p>Once you have the required training and permissions, you can book equipment when available for self-serve through ColabMacs Login. For staff-assisted work or specialized workflows, contact the team to coordinate.</p>
       <h3 style="margin-top:18px;">Two common pathways</h3>
       <ul class="bullets">
         <li><strong>Self-serve:</strong> trained users book time and operate approved tools independently.</li>
         <li><strong>Staff-assisted:</strong> staff perform or support critical steps, complex tools, or specialized processes.</li>
       </ul>
       <div class="btnrow">
-        <a class="btn primary" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ClaMacs</a>
+        <a class="btn primary" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ColabMacs Login</a>
         <a class="btn" href="{{ '/contact/' | relative_url }}">Request staff-assisted work</a>
       </div>
     </div>

@@ -5,12 +5,12 @@ kicker: Contact
 hero_title: Get in touch with the BioDevice Foundry
 description: Contact the Conconi Family BioDevice Foundry at UBC. Address, hours, and contact form placeholder.
 lead: Use this page to reach the team, request onboarding support, ask about pricing, or get help choosing the right pathway for your project.
-sublead: Returning user? ClaMacs is the fastest way to manage bookings and account details.
+sublead: Returning user? ColabMacs Login is the fastest way to manage bookings and account details.
 hero_actions:
   - label: Send a message
     url: "#contact-form"
     primary: true
-  - label: ClaMacs
+  - label: ColabMacs Login
     url: https://colabmacs.com/
   - label: Access & Training
     url: /access-training/
@@ -81,7 +81,7 @@ hero_actions:
             <select id="topic" name="topic">
               <option>General inquiry</option>
               <option>New user onboarding / training</option>
-              <option>Bookings / ClaMacs support</option>
+              <option>Bookings / ColabMacs support</option>
               <option>Services & pricing</option>
               <option>Design services / project support</option>
               <option>Other</option>
@@ -100,7 +100,7 @@ hero_actions:
         <div class="btnrow" style="margin-top:14px;">
           <button class="btn primary" type="submit">Send message</button>
           <a class="btn" href="{{ '/what-we-offer/' | relative_url }}">What we offer</a>
-          <a class="btn utility" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ClaMacs</a>
+          <a class="btn utility" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ColabMacs Login</a>
         </div>
       </form>
     </div>
@@ -124,8 +124,8 @@ hero_actions:
         </div>
         <div class="item">
           <strong>Returning user?</strong>
-          <span class="muted">Use ClaMacs for bookings and account status.</span><br />
-          <a class="btn utility" style="margin-top:10px; display:inline-block;" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ClaMacs</a>
+          <span class="muted">Use ColabMacs Login for bookings and account status.</span><br />
+          <a class="btn utility" style="margin-top:10px; display:inline-block;" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ColabMacs Login</a>
         </div>
       </div>
     </div>

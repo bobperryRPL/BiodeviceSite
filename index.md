@@ -11,7 +11,7 @@ hero_actions:
     primary: true
   - label: How to Become a User
     url: /access-training/
-  - label: ClaMacs
+  - label: ColabMacs Login
     url: https://colabmacs.com/
     utility: true
 ---
@@ -142,9 +142,9 @@ hero_actions:
     </div>
     <div class="card soft col-5">
       <h2>Returning users</h2>
-      <p class="muted">If you already have access, use ClaMacs to manage training status, bookings, and account details.</p>
+      <p class="muted">If you already have access, use ColabMacs Login to manage training status, bookings, and account details.</p>
       <div class="btnrow">
-        <a class="btn utility" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ClaMacs</a>
+        <a class="btn utility" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ColabMacs Login</a>
       </div>
     </div>
   </div>
