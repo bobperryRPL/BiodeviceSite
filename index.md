@@ -96,13 +96,31 @@ hero_actions:
 <section id="visual-highlights">
   <div class="grid">
     <div class="col-4">
-      {% include placeholder-image.html eyebrow="Expected image" title="Equipment close-up" text="A homepage highlight image for a signature tool or fabrication setup would usually go here." alt="Placeholder for equipment close-up" %}
+      <figure class="placeholder-figure">
+        <img src="{{ '/assets/laser-writer-equipent.jpg' | relative_url }}" alt="Laser writing equipment in the BioDevice Foundry" />
+        <figcaption>
+          <strong>Signature equipment</strong>
+          <span>Specialized fabrication tools support precise device development workflows.</span>
+        </figcaption>
+      </figure>
     </div>
     <div class="col-4">
-      {% include placeholder-image.html eyebrow="Expected image" title="Team or user training photo" text="This would usually show staff assisting users or training happening in the facility." alt="Placeholder for staff or user training photo" %}
+      <figure class="placeholder-figure">
+        <img src="{{ '/assets/user-in-training.jpg' | relative_url }}" alt="A user being trained in the BioDevice Foundry" />
+        <figcaption>
+          <strong>User training</strong>
+          <span>New users receive hands-on onboarding and process-specific support.</span>
+        </figcaption>
+      </figure>
     </div>
     <div class="col-4">
-      {% include placeholder-image.html eyebrow="Expected diagram" title="Capabilities or process diagram" text="A concise visual explaining fabrication, biofunctionalization, prototyping, and characterization would fit here." alt="Placeholder for capabilities diagram" %}
+      <figure class="placeholder-figure">
+        <img src="{{ '/assets/cleanroom-flow.png' | relative_url }}" alt="A cleanroom process flow graphic for BioDevice Foundry users" />
+        <figcaption>
+          <strong>Process flow</strong>
+          <span>A quick visual overview of how users move through fabrication and support pathways.</span>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
