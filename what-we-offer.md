@@ -5,15 +5,15 @@ kicker: What We Offer
 hero_title: Capabilities that take biodevices from idea to working system
 description: Explore fabrication, prototyping, biofunctionalization, and characterization capabilities at the Conconi Family BioDevice Foundry.
 lead: The BioDevice Foundry combines cleanroom microfabrication with rapid prototyping, biofunctionalization, and device/material characterization in one place.
-sublead: If you are new, start with Access & Training to understand onboarding. If you already have access, book through NEMO.
+sublead: If you are new, start with Access & Training to understand onboarding. If you already have access, book through ClaMacs.
 hero_actions:
   - label: Access & Training
     url: /access-training/
     primary: true
   - label: Fees & Pricing
     url: /services-pricing/
-  - label: NEMO Login
-    url: /nemo-login/
+  - label: ClaMacs
+    url: https://colabmacs.com/
 jump_links:
   - label: Fabrication
     url: "#fabrication"
@@ -47,7 +47,7 @@ jump_links:
       <p class="muted">Choose what best matches your situation:</p>
       <div class="btnrow">
         <a class="btn" href="{{ '/access-training/' | relative_url }}">I am a new user</a>
-        <a class="btn" href="{{ '/nemo-login/' | relative_url }}">I need to book equipment</a>
+        <a class="btn" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">I need to book equipment</a>
         <a class="btn" href="{{ '/services-pricing/' | relative_url }}">I need pricing</a>
       </div>
     </div>

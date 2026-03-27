@@ -7,8 +7,8 @@ description: Services and pricing for the Conconi Family BioDevice Foundry. View
 lead: Pricing is listed by user category. Use the selector to highlight the column that applies to you. If you are unsure which category fits, contact the team and they can confirm it quickly.
 sublead: Some items may be quoted case-by-case depending on requirements.
 hero_actions:
-  - label: NEMO Login
-    url: /nemo-login/
+  - label: ClaMacs
+    url: https://colabmacs.com/
     primary: true
   - label: Access & Training
     url: /access-training/

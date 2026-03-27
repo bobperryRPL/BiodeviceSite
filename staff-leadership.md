@@ -17,7 +17,17 @@ hero_actions:
   <section>
     <div class="grid">
       <div class="col-4">
-        {% include placeholder-image.html eyebrow="Expected portrait" title=person.title text="Staff and leadership pages normally include a portrait or in-lab photo for each team member." alt=person.title %}
+        {% if person.image %}
+          <figure class="placeholder-figure">
+            <img src="{{ person.image | relative_url }}" alt="Portrait of {{ person.title }}" />
+            <figcaption>
+              <strong>{{ person.title }}</strong>
+              <span>{{ person.role }}</span>
+            </figcaption>
+          </figure>
+        {% else %}
+          {% include placeholder-image.html eyebrow="Expected portrait" title=person.title text="Staff and leadership pages normally include a portrait or in-lab photo for each team member." alt=person.title %}
+        {% endif %}
       </div>
       <div class="card col-8">
         <h2>{{ person.title }}</h2>
@@ -37,7 +47,13 @@ hero_actions:
       <p class="muted">In addition to portraits, a staff page usually benefits from one or two candid images of the team in the facility or supporting users at equipment.</p>
       <div class="grid" style="margin-top:14px;">
         <div class="col-6">
-          {% include placeholder-image.html eyebrow="Expected image" title="Team in the facility" text="A group or candid lab image would typically appear here." alt="Placeholder for team in the facility" %}
+          <figure class="placeholder-figure">
+            <img src="{{ '/assets/group-photo.jpg' | relative_url }}" alt="Group photo of the BioDevice Foundry team" />
+            <figcaption>
+              <strong>BioDevice Foundry team</strong>
+              <span>The team supporting users across fabrication, prototyping, and biodevice development.</span>
+            </figcaption>
+          </figure>
         </div>
         <div class="col-6">
           {% include placeholder-image.html eyebrow="Expected image" title="Staff supporting users" text="A process-support or training photo would usually reinforce the service role of the team." alt="Placeholder for staff supporting users" %}

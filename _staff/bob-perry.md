@@ -2,6 +2,7 @@
 title: Bob Perry
 role: Engineering Technician
 order: 3
+image: /assets/Bob-min-1-1497x1536.png
 bio:
   - With more than a decade of experience building creative automation and manufacturing systems, Bob Perry has worked across aerospace, defense, and medical technology sectors to bring complex ideas into reality.
   - His work blends practical engineering with rapid iteration, helping teams turn early concepts into functional, tested solutions.

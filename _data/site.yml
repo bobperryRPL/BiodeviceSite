@@ -8,6 +8,6 @@ address_lines:
 hours: "Monday-Friday (except holidays): 08:30 - 16:30"
 contact_email: foundry@example.ubc.ca
 contact_phone: "(604) 000-0000"
-nemo_url: /nemo-login/
+nemo_url: "https://colabmacs.com/"
 google_maps_url: "https://www.google.com/maps?q=6088+University+Blvd,+Vancouver,+BC+V6T+1Z3"
 copyright_label: BioDevice Foundry

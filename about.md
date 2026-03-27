@@ -39,7 +39,7 @@ jump_links:
         <a class="btn" href="{{ '/what-we-offer/' | relative_url }}">Capabilities</a>
         <a class="btn" href="{{ '/services-pricing/' | relative_url }}">Fees</a>
         <a class="btn" href="{{ '/access-training/' | relative_url }}">Training</a>
-        <a class="btn" href="{{ '/nemo-login/' | relative_url }}">NEMO Login</a>
+        <a class="btn" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ClaMacs</a>
       </div>
     </div>
   </div>

@@ -1,7 +1,8 @@
 ---
 title: Govind Kaigala
 role: Scientific Director
-order: 4
+order: 0
+image: /assets/Govind-min-1497x1536.png
 bio:
   - Dr. Govind Kaigala's interests are in the areas of microscale fluid control, microscale molecular assays, and technologies for personalized medicine. He is passionate about translational clinical and medical research.
   - He joined UBC in the summer of 2022. Previously he was at the IBM Research laboratory in Zurich for about 11 years, where he was a scientist and a principal investigator leading a team of researchers in the area of precision diagnostics.
