@@ -24,7 +24,13 @@ hero_actions:
       <p class="muted">Whether you are developing a microfluidic chip, biosensor, implantable component, or custom research tool, the Foundry provides the infrastructure and support to move your work forward.</p>
     </div>
     <div class="col-5">
-      {% include placeholder-image.html eyebrow="Expected image" title="Facility overview photo" text="This is where a high-quality image of the lab or cleanroom entry would normally appear on the homepage." alt="Placeholder for facility overview photo" %}
+      <figure class="placeholder-figure">
+        <img src="{{ '/assets/man-in-foundry.png' | relative_url }}" alt="A staff member in the cleanroom at the BioDevice Foundry" />
+        <figcaption>
+          <strong>Inside the cleanroom</strong>
+          <span>Staff-supported fabrication and prototyping in the BioDevice Foundry.</span>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
