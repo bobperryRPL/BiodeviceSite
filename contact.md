@@ -3,18 +3,17 @@ title: Contact
 permalink: /contact/
 kicker: Contact
 hero_title: Get in touch with the BioDevice Foundry
-description: Contact the Conconi Family BioDevice Foundry at UBC. Address, hours, and contact form placeholder.
+description: Contact the Conconi Family BioDevice Foundry at UBC. Address, hours, map, intake form, and email contact.
 lead: Use this page to reach the team, request onboarding support, ask about pricing, or get help choosing the right pathway for your project.
 sublead: Returning user? ColabMacs Login is the fastest way to manage bookings and account details.
 hero_actions:
-  - label: Send a message
-    url: "#contact-form"
+  - label: Step 1: Intake Form
+    url: https://ubc.ca1.qualtrics.com/jfe/form/SV_bJkOwKA73jF4bxs
     primary: true
+  - label: Email Us
+    url: "mailto:{{ site.data.site.contact_email }}"
   - label: ColabMacs Login
     url: https://colabmacs.com/
-  - label: Access & Training
-    url: /access-training/
-    utility: true
 ---
 <section id="location">
   <div class="grid">
@@ -26,10 +25,16 @@ hero_actions:
       </p>
       <h3>Regular staffed hours</h3>
       <p><strong>{{ site.data.site.hours }}</strong></p>
+      <div class="embed-frame">
+        <iframe
+          src="https://www.google.com/maps?q=6088+University+Blvd,+Vancouver,+BC+V6T+1Z3&output=embed"
+          title="Map to the BioDevice Foundry"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <div class="btnrow">
-        <a class="btn primary" href="{{ site.data.site.google_maps_url }}">Open in Maps</a>
+        <a class="btn" href="{{ site.data.site.google_maps_url }}" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
         <a class="btn" href="{{ '/about-the-foundry/' | relative_url }}">About the Foundry</a>
-        <a class="btn" href="{{ '/services-pricing/' | relative_url }}">Services & Pricing</a>
       </div>
       <p class="help">Tip: if you are visiting for the first time, message the team ahead of time and ask for entry and wayfinding details.</p>
     </div>
@@ -55,54 +60,17 @@ hero_actions:
   </div>
 </section>
 
-<section id="contact-form">
+<section id="contact-options">
   <div class="grid">
     <div class="card col-12">
-      <h2>Contact form</h2>
-      <p class="muted">New users should start with the intake form in Access & Training before using email or this contact form. This form is best for existing-user support, pricing questions, and general inquiries.</p>
-      <div class="btnrow" style="margin-bottom:14px;">
+      <h2>How to contact us</h2>
+      <p class="muted">New users should begin with the intake form. For all other inquiries, email the team directly.</p>
+      <div class="btnrow">
         <a class="btn primary" href="https://ubc.ca1.qualtrics.com/jfe/form/SV_bJkOwKA73jF4bxs" target="_blank" rel="noopener noreferrer">Step 1: New User Intake Form</a>
+        <a class="btn" href="mailto:{{ site.data.site.contact_email }}">Email {{ site.data.site.contact_email }}</a>
         <a class="btn" href="{{ '/access-training/' | relative_url }}">Access & Training</a>
       </div>
-      <form action="#" method="post">
-        <div class="fieldgrid">
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name" required />
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@domain.com" required />
-          </div>
-        </div>
-        <div class="fieldgrid" style="margin-top:12px;">
-          <div class="field">
-            <label for="topic">Topic</label>
-            <select id="topic" name="topic">
-              <option>General inquiry</option>
-              <option>New user onboarding / training</option>
-              <option>Bookings / ColabMacs support</option>
-              <option>Services & pricing</option>
-              <option>Design services / project support</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="affiliation">Affiliation</label>
-            <input id="affiliation" name="affiliation" type="text" placeholder="UBC / external / industry / lab / company" />
-          </div>
-        </div>
-        <div class="field" style="margin-top:12px;">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="What are you trying to build or do? Any constraints such as materials, scale, biology, or timeline?" required></textarea>
-          <div class="help">Helpful details: target processes or tools, preferred materials, and your ideal timeline.</div>
-        </div>
-        <div class="btnrow" style="margin-top:14px;">
-          <button class="btn primary" type="submit">Send message</button>
-          <a class="btn" href="{{ '/what-we-offer/' | relative_url }}">What we offer</a>
-          <a class="btn utility" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ColabMacs Login</a>
-        </div>
-      </form>
+      <p class="help">If you are requesting access for the first time, please do not email first. Submit the intake form so the team can route your request properly.</p>
     </div>
   </div>
 </section>
