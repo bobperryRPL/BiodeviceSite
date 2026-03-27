@@ -664,15 +664,42 @@ textarea {
 .ubc7-unit-footer-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 32px;
   flex-wrap: wrap;
 }
-
 
 #ubc7-unit-address,
 .ubc7-footer-meta {
   display: grid;
   gap: 6px;
+}
+
+.ubc7-affiliate-mark {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.ubc7-affiliate-kicker {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b7c5d3;
+}
+
+.ubc7-affiliate-mark img {
+  display: block;
+  width: auto;
+  max-width: min(100%, 220px);
+  max-height: 56px;
+  object-fit: contain;
 }
 
 #ubc7-address-unit-name,
@@ -838,6 +865,10 @@ textarea {
 
   .ubc7-footer-menu-grid {
     grid-template-columns: 1fr;
+  }
+
+  .ubc7-affiliate-mark {
+    justify-items: flex-start;
   }
 
   table {
