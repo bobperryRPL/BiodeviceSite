@@ -43,7 +43,13 @@ hero_actions:
         <li>If you cannot find it, contact the team for wayfinding help.</li>
       </ul>
       <div style="margin-top:14px;">
-        {% include placeholder-image.html eyebrow="Expected map or photo" title="Wayfinding reference image" text="This is where a floor map, entrance photo, or landmark sequence would normally appear to help visitors find the facility." alt="Placeholder for wayfinding reference image" %}
+        <figure class="placeholder-figure">
+          <img src="{{ '/assets/building-sbme.jpg' | relative_url }}" alt="Exterior view of the SBME building at UBC" />
+          <figcaption>
+            <strong>SBME building entrance</strong>
+            <span>Use this as a visual landmark while the detailed map is still in progress.</span>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>
@@ -53,7 +59,11 @@ hero_actions:
   <div class="grid">
     <div class="card col-12">
       <h2>Contact form</h2>
-      <p class="muted">Tell the team what you are trying to do and they can route you to the right person or next step. This form is currently a front-end placeholder until a real submission backend is connected.</p>
+      <p class="muted">New users should start with the intake form in Access & Training before using email or this contact form. This form is best for existing-user support, pricing questions, and general inquiries.</p>
+      <div class="btnrow" style="margin-bottom:14px;">
+        <a class="btn primary" href="https://ubc.ca1.qualtrics.com/jfe/form/SV_bJkOwKA73jF4bxs" target="_blank" rel="noopener noreferrer">Step 1: New User Intake Form</a>
+        <a class="btn" href="{{ '/access-training/' | relative_url }}">Access & Training</a>
+      </div>
       <form action="#" method="post">
         <div class="fieldgrid">
           <div class="field">

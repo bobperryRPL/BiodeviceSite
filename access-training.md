@@ -60,16 +60,18 @@ jump_links:
     <div class="card col-12">
       <h2>New users: the typical onboarding path</h2>
       <p>Access to the BioDevice Foundry is managed through a structured user program designed to ensure safety, efficiency, and project success.</p>
+      <p class="muted"><strong>Step 1 for all new users:</strong> complete the new user intake form before emailing the team. This helps route your request and identify the right onboarding and training pathway.</p>
       <ol class="steps">
-        <li><strong>Create a user account</strong> or request access if you do not have one yet.</li>
+        <li><strong>Complete the new user intake form</strong> so the team can review your project and access needs.</li>
         <li><strong>Complete required training</strong> based on your intended tools and processes.</li>
         <li><strong>Book equipment or request services</strong> depending on your workflow.</li>
       </ol>
       <div class="btnrow">
-        <a class="btn primary" href="{{ '/contact/' | relative_url }}">Start onboarding</a>
+        <a class="btn primary" href="https://ubc.ca1.qualtrics.com/jfe/form/SV_bJkOwKA73jF4bxs" target="_blank" rel="noopener noreferrer">Step 1: New User Intake Form</a>
         <a class="btn" href="{{ '/what-we-offer/' | relative_url }}">Explore what we offer</a>
         <a class="btn" href="{{ '/services-pricing/' | relative_url }}">Fees & Pricing</a>
       </div>
+      <p class="help">Use email only after submitting the intake form, or if you are an existing user with a booking, account, or support issue.</p>
     </div>
   </div>
 </section>
