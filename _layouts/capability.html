@@ -1,81 +1,79 @@
 ---
 layout: default
 ---
-<div class="row-fluid page-shell-row">
-  <div class="span12 page-shell">
-    <section class="hero-block">
-      <div class="hero-card">
-        <h1>{{ page.title }}</h1>
-        <p class="lead">{{ page.lead }}</p>
-        {% if page.sublead %}<p class="sublead">{{ page.sublead }}</p>{% endif %}
+<div class="wrap page-shell">
+  <section class="hero-block">
+    <div class="hero-card">
+      <h1>{{ page.title }}</h1>
+      <p class="lead">{{ page.lead }}</p>
+      {% if page.sublead %}<p class="sublead">{{ page.sublead }}</p>{% endif %}
+      <div class="btnrow">
+        <a class="btn primary" href="{{ '/contact/' | relative_url }}">Contact for guidance</a>
+        <a class="btn" href="{{ '/what-we-offer/' | relative_url }}">Back to What We Offer</a>
+        <a class="btn" href="{{ '/access-training/' | relative_url }}">Access & Training</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid">
+      <div class="card col-8">
+        <h2>What this enables</h2>
+        <ul class="bullets">
+          {% for item in page.enables %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+
+        <h2 class="section-heading">Typical inputs / outputs</h2>
+        <ul class="bullets">
+          {% for item in page.inputs_outputs %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="card soft col-4">
+        <h2>Requirements</h2>
+        <p class="muted">{{ page.requirements_intro }}</p>
+        <ul class="bullets">
+          {% for item in page.requirements %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
         <div class="btnrow">
-          <a class="btn primary" href="{{ '/contact/' | relative_url }}">Contact for guidance</a>
-          <a class="btn" href="{{ '/what-we-offer/' | relative_url }}">Back to What We Offer</a>
-          <a class="btn" href="{{ '/access-training/' | relative_url }}">Access & Training</a>
+          <a class="btn primary" href="{{ '/access-training/' | relative_url }}">Training steps</a>
+          <a class="btn" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ColabMacs Login</a>
+        </div>
+        <div style="margin-top:14px;">
+          {% include placeholder-image.html eyebrow="Expected tool image" title=page.title text="Capability pages usually include a photo of the instrument, process setup, or a technical diagram of the workflow." alt=page.title %}
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="grid">
-        <div class="card col-8">
-          <h2>What this enables</h2>
-          <ul class="bullets">
-            {% for item in page.enables %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
+  <section>
+    <div class="grid">
+      <div class="card col-12">
+        <h2>Equipment and process notes</h2>
+        <p class="muted">{{ page.placeholder_notes }}</p>
+      </div>
+    </div>
+  </section>
 
-          <h2 class="section-heading">Typical inputs / outputs</h2>
-          <ul class="bullets">
-            {% for item in page.inputs_outputs %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-
-        <div class="card soft col-4">
-          <h2>Requirements</h2>
-          <p class="muted">{{ page.requirements_intro }}</p>
-          <ul class="bullets">
-            {% for item in page.requirements %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-          <div class="btnrow">
-            <a class="btn primary" href="{{ '/access-training/' | relative_url }}">Training steps</a>
-            <a class="btn" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ColabMacs Login</a>
-          </div>
-          <div style="margin-top:14px;">
-            {% include placeholder-image.html eyebrow="Expected tool image" title=page.title text="Capability pages usually include a photo of the instrument, process setup, or a technical diagram of the workflow." alt=page.title %}
-          </div>
+  <section>
+    <div class="grid">
+      <div class="card soft col-12">
+        <h2>Related capabilities</h2>
+        <div class="btnrow">
+          {% for slug in page.related %}
+            {% assign related_item = site.capabilities | where: "slug", slug | first %}
+            {% if related_item %}
+              <a class="btn" href="{{ related_item.url | relative_url }}">{{ related_item.title }}</a>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
-    </section>
-
-    <section>
-      <div class="grid">
-        <div class="card col-12">
-          <h2>Equipment and process notes</h2>
-          <p class="muted">{{ page.placeholder_notes }}</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="grid">
-        <div class="card soft col-12">
-          <h2>Related capabilities</h2>
-          <div class="btnrow">
-            {% for slug in page.related %}
-              {% assign related_item = site.capabilities | where: "slug", slug | first %}
-              {% if related_item %}
-                <a class="btn" href="{{ related_item.url | relative_url }}">{{ related_item.title }}</a>
-              {% endif %}
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </div>

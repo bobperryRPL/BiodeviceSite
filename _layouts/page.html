@@ -1,33 +1,31 @@
 ---
 layout: default
 ---
-<div class="row-fluid page-shell-row">
-  <div class="span12 page-shell">
-    {% if page.kicker or page.hero_title or page.lead %}
-      <section class="hero-block">
-        <div class="hero-card">
-          <h1>{{ page.hero_title | default: page.title }}</h1>
-          {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
-          {% if page.sublead %}<p class="sublead">{{ page.sublead }}</p>{% endif %}
-          {% if page.hero_actions %}
-            <div class="btnrow">
-              {% for action in page.hero_actions %}
-                {% assign first_char = action.url | slice: 0, 1 %}
-                <a class="btn{% if action.primary %} primary{% endif %}{% if action.utility %} utility{% endif %}" href="{% if first_char == '#' or action.url contains '://' %}{{ action.url }}{% else %}{{ action.url | relative_url }}{% endif %}">{{ action.label }}</a>
-              {% endfor %}
-            </div>
-          {% endif %}
-          {% if page.jump_links %}
-            <div class="pillrow">
-              {% for jump in page.jump_links %}
-                {% assign jump_first_char = jump.url | slice: 0, 1 %}
-                <a class="pill" href="{% if jump_first_char == '#' or jump.url contains '://' %}{{ jump.url }}{% else %}{{ jump.url | relative_url }}{% endif %}">{{ jump.label }}</a>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </div>
-      </section>
-    {% endif %}
-    {{ content }}
-  </div>
+<div class="wrap page-shell">
+  {% if page.kicker or page.hero_title or page.lead %}
+    <section class="hero-block">
+      <div class="hero-card">
+        <h1>{{ page.hero_title | default: page.title }}</h1>
+        {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+        {% if page.sublead %}<p class="sublead">{{ page.sublead }}</p>{% endif %}
+        {% if page.hero_actions %}
+          <div class="btnrow">
+            {% for action in page.hero_actions %}
+              {% assign first_char = action.url | slice: 0, 1 %}
+              <a class="btn{% if action.primary %} primary{% endif %}{% if action.utility %} utility{% endif %}" href="{% if first_char == '#' or action.url contains '://' %}{{ action.url }}{% else %}{{ action.url | relative_url }}{% endif %}">{{ action.label }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if page.jump_links %}
+          <div class="pillrow">
+            {% for jump in page.jump_links %}
+              {% assign jump_first_char = jump.url | slice: 0, 1 %}
+              <a class="pill" href="{% if jump_first_char == '#' or jump.url contains '://' %}{{ jump.url }}{% else %}{{ jump.url | relative_url }}{% endif %}">{{ jump.label }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
+  {{ content }}
 </div>
