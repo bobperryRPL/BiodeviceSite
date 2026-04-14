@@ -1,6 +1,4 @@
 :root {
-  --maxw: 910px;
-  --header-maxw: 910px;
   --pad: 20px;
   --radius: 14px;
   --font-sans: "Whitney-Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -48,12 +46,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.wrap {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0 var(--pad);
-}
-
 #ubc7-header {
   background: var(--brand-navy);
   box-shadow: 0 8px 20px rgba(0, 33, 69, 0.08);
@@ -74,9 +66,10 @@ a:hover {
 }
 
 #ubc7-unit-name {
-  max-width: min(100%, var(--header-maxw));
-  margin: 0 auto;
-  padding: 0 var(--pad);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 #ubc7-unit-name a {
@@ -133,9 +126,10 @@ a:hover {
 }
 
 #ubc7-unit-menu .nav {
-  max-width: min(100%, var(--header-maxw));
-  margin: 0 auto;
-  padding: 0 var(--pad);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 #ubc7-unit-menu .nav > li > a {
