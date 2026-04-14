@@ -38,14 +38,7 @@ body {
   font-weight: var(--weight-book);
   line-height: 1.55;
   color: var(--text);
-  background: var(--bg);
-  background-image:
-    radial-gradient(circle at top left, rgba(176, 28, 46, 0.1), transparent 24%),
-    radial-gradient(circle at top right, rgba(47, 134, 201, 0.12), transparent 28%),
-    linear-gradient(rgba(255, 255, 255, 0.42) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.42) 1px, transparent 1px);
-  background-size: auto, auto, 32px 32px, 32px 32px;
-  background-attachment: fixed;
+  background: #fff;
 }
 
 a {
@@ -148,19 +141,11 @@ a:hover {
 }
 
 .page-shell {
-  position: relative;
   padding: 34px 0 10px;
 }
 
 .page-shell::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 88% 10%, rgba(176, 28, 46, 0.1), transparent 18%),
-    radial-gradient(circle at 12% 78%, rgba(47, 134, 201, 0.1), transparent 22%);
-  z-index: -1;
+  content: none;
 }
 
 .hero-block,
@@ -172,15 +157,11 @@ section {
 .card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--panel);
-  box-shadow: var(--shadow);
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .hero-card {
-  background:
-    linear-gradient(135deg, rgba(176, 28, 46, 0.12), transparent 36%),
-    linear-gradient(210deg, rgba(47, 134, 201, 0.18), transparent 38%),
-    linear-gradient(180deg, #edf4fb 0%, #ffffff 100%);
   padding: 28px;
 }
 
@@ -190,7 +171,7 @@ section {
 }
 
 .card.soft {
-  background: var(--panel-soft);
+  background: #f7f9fb;
 }
 
 .kicker {
@@ -250,10 +231,6 @@ p {
   gap: 18px;
 }
 
-section:nth-of-type(even) .card:not(.soft) {
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbfe 100%);
-}
-
 .col-4 { grid-column: span 4; }
 .col-5 { grid-column: span 5; }
 .col-6 { grid-column: span 6; }
@@ -275,50 +252,45 @@ section:nth-of-type(even) .card:not(.soft) {
 .pill,
 .seg {
   display: inline-block;
-  padding: 12px 16px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  background: var(--panel);
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 1px solid #c8d3df;
+  background: #fff;
   font: inherit;
   font-weight: var(--weight-semibold);
   transition:
     background-color 0.18s ease,
     border-color 0.18s ease,
-    color 0.18s ease,
-    background-image 0.18s ease;
+    color 0.18s ease;
 }
 
 .btn.primary,
 .seg[aria-pressed="true"] {
-  background: var(--brand-blue);
+  background: var(--brand-navy);
   color: #fff;
-  border-color: var(--brand-blue);
+  border-color: var(--brand-navy);
 }
 
 .btn.utility {
   color: var(--muted);
-  background: transparent;
-  border-style: dashed;
+  background: #fff;
 }
 
 .btn:hover,
 .pill:hover,
 .seg:hover {
-  background: #e8f0f8;
+  background: #f3f6f9;
   text-decoration: none;
 }
 
 .btn.primary:hover,
 .seg[aria-pressed="true"]:hover {
-  opacity: 0.92;
-  background-color: var(--brand-navy);
-  background-image: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy) 100%);
+  background-color: #00152e;
+  border-color: #00152e;
 }
 
 .pill {
-  border-radius: 999px;
-  padding: 10px 12px;
-  color: var(--brand-navy);
+  color: var(--brand-blue);
 }
 
 .bullets,
@@ -346,7 +318,7 @@ section:nth-of-type(even) .card:not(.soft) {
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 14px;
-  background: linear-gradient(180deg, #ffffff 0%, #f2f7fb 100%);
+  background: #fff;
   transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
 
@@ -367,8 +339,8 @@ section:nth-of-type(even) .card:not(.soft) {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: linear-gradient(180deg, #ffffff 0%, #f7fbfe 100%);
-  box-shadow: var(--shadow);
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .placeholder-figure img {
@@ -428,7 +400,7 @@ section:nth-of-type(even) .card:not(.soft) {
   overflow-x: auto;
   border: 1px solid var(--border);
   border-radius: 14px;
-  background: var(--panel);
+  background: #fff;
 }
 
 table {
@@ -513,7 +485,7 @@ textarea {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 12px;
-  background: linear-gradient(180deg, #ffffff 0%, #f7fbfe 100%);
+  background: #fff;
 }
 
 #ubc7-unit-address,
