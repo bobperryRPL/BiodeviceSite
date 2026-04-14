@@ -1,5 +1,5 @@
 :root {
-  --maxw: 1100px;
+  --maxw: 940px;
   --header-maxw: 1440px;
   --pad: 20px;
   --radius: 14px;
@@ -52,13 +52,6 @@ a:hover {
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 0 var(--pad);
-}
-
-@media (min-width: 980px) {
-  .container,
-  #ubc7-unit-menu .container {
-    width: var(--maxw);
-  }
 }
 
 #ubc7-header {
