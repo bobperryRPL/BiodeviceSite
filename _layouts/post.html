@@ -1,18 +1,20 @@
 ---
 layout: default
 ---
-<div class="wrap page-shell">
-  <section class="hero-block">
-    <div class="hero-card">
-      <h1>{{ page.title }}</h1>
-      {% if page.date %}<p class="sublead">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
-    </div>
-  </section>
-  <section>
-    <div class="grid">
-      <article class="card col-12">
-        {{ content }}
-      </article>
-    </div>
-  </section>
+<div class="row-fluid page-shell-row">
+  <div class="span12 page-shell">
+    <section class="hero-block">
+      <div class="hero-card">
+        <h1>{{ page.title }}</h1>
+        {% if page.date %}<p class="sublead">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
+      </div>
+    </section>
+    <section>
+      <div class="grid">
+        <article class="card col-12">
+          {{ content }}
+        </article>
+      </div>
+    </section>
+  </div>
 </div>
