@@ -59,7 +59,7 @@ jump_links:
   <div class="grid">
     <div class="card col-12">
       <h2>New users: the typical onboarding path</h2>
-      <p>Access to the BioDevice Foundry is managed through a structured user program designed to ensure safety, efficiency, and project success.</p>
+      <p>Access to the Conconi Family BioDevice Foundry is managed through a structured user program designed to ensure safety, efficiency, and project success.</p>
       <p class="muted"><strong>Step 1 for all new users:</strong> complete the new user intake form before emailing the team. This helps route your request and identify the right onboarding and training pathway.</p>
       <ol class="steps">
         <li><strong>Complete the new user intake form</strong> so the team can review your project and access needs.</li>
@@ -130,7 +130,7 @@ jump_links:
   <div class="grid">
     <div class="card col-12">
       <h2>Policies & Safety</h2>
-      <p>The Foundry operates with safety-first policies appropriate for cleanroom, chemistry, and fabrication environments. Users must follow facility rules, complete required training, and use approved materials and procedures.</p>
+      <p>The Conconi Family BioDevice Foundry operates with safety-first policies appropriate for cleanroom, chemistry, and fabrication environments. Users must follow facility rules, complete required training, and use approved materials and procedures.</p>
       <p class="muted">Placeholder: add the current safety policies, permitted and restricted materials, PPE expectations, and escalation contacts here.</p>
       <div class="btnrow">
         <a class="btn primary" href="{{ '/contact/' | relative_url }}">Ask about compliance</a>

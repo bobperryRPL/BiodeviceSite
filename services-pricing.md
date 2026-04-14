@@ -103,7 +103,7 @@ hero_actions:
   <div class="grid">
     <div class="card col-8">
       <h2>Services</h2>
-      <p>In addition to instrument access, the Foundry supports users through staff-assisted workflows and project guidance. This is especially useful if you are new to the processes, need faster iteration, or have complex constraints.</p>
+      <p>In addition to instrument access, the Conconi Family BioDevice Foundry supports users through staff-assisted workflows and project guidance. This is especially useful if you are new to the processes, need faster iteration, or have complex constraints.</p>
       <ul class="inline-list">
         <li>Training and staff support</li>
         <li>Custom processing by staff</li>

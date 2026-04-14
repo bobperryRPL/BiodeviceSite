@@ -4,7 +4,7 @@ permalink: /staff-leadership/
 kicker: Staff & Leadership
 hero_title: Meet the team
 description: Staff and leadership bios for the Conconi Family BioDevice Foundry at UBC.
-lead: The Foundry is supported by staff and leadership with expertise spanning microfabrication, microfluidics, surface chemistry, prototyping, and translational biodevice development.
+lead: The Conconi Family BioDevice Foundry is supported by staff and leadership with expertise spanning microfabrication, microfluidics, surface chemistry, prototyping, and translational biodevice development.
 hero_actions:
   - label: Back to About the Foundry
     url: /about-the-foundry/
@@ -48,9 +48,9 @@ hero_actions:
       <div class="grid" style="margin-top:14px;">
         <div class="col-6">
           <figure class="placeholder-figure">
-            <img src="{{ '/assets/group-photo.jpg' | relative_url }}" alt="Group photo of the BioDevice Foundry team" />
+            <img src="{{ '/assets/group-photo.jpg' | relative_url }}" alt="Group photo of the Conconi Family BioDevice Foundry team" />
             <figcaption>
-              <strong>BioDevice Foundry team</strong>
+              <strong>Conconi Family BioDevice Foundry team</strong>
               <span>The team supporting users across fabrication, prototyping, and biodevice development.</span>
             </figcaption>
           </figure>

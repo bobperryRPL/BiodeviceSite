@@ -29,8 +29,8 @@ jump_links:
     <div class="card col-8">
       <h2>Mission</h2>
       <p>The Conconi Family BioDevice Foundry is the first of its kind in Western Canada to be designed and oriented for life sciences applications. The unique capability of the facility is that it interfaces standard cleanroom microdevice manufacturing processes with cutting-edge life sciences research.</p>
-      <p>The Foundry aims to develop solutions to common challenges by consolidating specialized infrastructure and technological expertise, nucleating a pool of experts and giving them the technological capabilities to create translation-centric solutions to biomedical and clinical problems.</p>
-      <p class="muted">The Foundry re-imagines what a core facility can be: not only implementing off-the-shelf biodevices for users, but also creating custom solutions by innovating novel materials, techniques, and biodevice types.</p>
+      <p>The Conconi Family BioDevice Foundry aims to develop solutions to common challenges by consolidating specialized infrastructure and technological expertise, nucleating a pool of experts and giving them the technological capabilities to create translation-centric solutions to biomedical and clinical problems.</p>
+      <p class="muted">The Conconi Family BioDevice Foundry re-imagines what a core facility can be: not only implementing off-the-shelf biodevices for users, but also creating custom solutions by innovating novel materials, techniques, and biodevice types.</p>
     </div>
     <div class="card soft col-4">
       <h2>Quick links</h2>
@@ -80,7 +80,7 @@ jump_links:
 <section id="how-we-help">
   <div class="grid">
     <div class="card col-12">
-      <h2>How the Foundry helps projects move forward</h2>
+      <h2>How the Conconi Family BioDevice Foundry helps projects move forward</h2>
       <p>We support translation-centric work by bringing specialized infrastructure and expertise together in one place. Depending on your needs, this can include equipment access, staff support, and process guidance across fabrication, prototyping, biofunctionalization, and characterization.</p>
       <div class="btnrow">
         <a class="btn primary" href="{{ '/what-we-offer/' | relative_url }}">What We Offer</a>

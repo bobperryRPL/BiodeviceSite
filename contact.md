@@ -2,7 +2,7 @@
 title: Contact
 permalink: /contact/
 kicker: Contact
-hero_title: Get in touch with the BioDevice Foundry
+hero_title: Get in touch with the Conconi Family BioDevice Foundry
 description: Contact the Conconi Family BioDevice Foundry at UBC. Address, hours, map, intake form, and email contact.
 lead: Use this page to reach the team, request onboarding support, ask about pricing, or get help choosing the right pathway for your project.
 sublead: Returning user? ColabMacs Login is the fastest way to manage bookings and account details.
@@ -28,23 +28,23 @@ hero_actions:
       <div class="embed-frame">
         <iframe
           src="https://www.google.com/maps?q=6088+University+Blvd,+Vancouver,+BC+V6T+1Z3&output=embed"
-          title="Map to the BioDevice Foundry"
+          title="Map to the Conconi Family BioDevice Foundry"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="btnrow">
         <a class="btn" href="{{ site.data.site.google_maps_url }}" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
-        <a class="btn" href="{{ '/about-the-foundry/' | relative_url }}">About the Foundry</a>
+        <a class="btn" href="{{ '/about-the-foundry/' | relative_url }}">About the Conconi Family BioDevice Foundry</a>
       </div>
       <p class="help">Tip: if you are visiting for the first time, message the team ahead of time and ask for entry and wayfinding details.</p>
     </div>
     <div class="card soft col-5">
       <h2>How to find us</h2>
-      <p class="muted">The Foundry is located in the SBME building on the basement level, room B1130.</p>
+      <p class="muted">The Conconi Family BioDevice Foundry is located in the SBME building on the basement level, room B1130.</p>
       <ul class="bullets">
         <li>Enter the SBME building at 6088 University Blvd.</li>
         <li>Go down to the basement level.</li>
-        <li>Follow signage for the BioDevice Foundry to room B1130.</li>
+        <li>Follow signage for the Conconi Family BioDevice Foundry to room B1130.</li>
         <li>If you cannot find it, contact the team for wayfinding help.</li>
       </ul>
       <div style="margin-top:14px;">
@@ -81,7 +81,7 @@ hero_actions:
       <h2>Quick links</h2>
       <div class="kv">
         <div class="item">
-          <strong>New to the Foundry?</strong>
+          <strong>New to the Conconi Family BioDevice Foundry?</strong>
           <span class="muted">Start with Access & Training to understand onboarding and requirements.</span><br />
           <a class="btn" style="margin-top:10px; display:inline-block;" href="{{ '/access-training/' | relative_url }}">Access & Training</a>
         </div>

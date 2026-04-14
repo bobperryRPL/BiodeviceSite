@@ -3,7 +3,7 @@ title: Home
 hero_title: Design, fabricate, and test biomedical devices from early prototypes to functional systems.
 kicker: Conconi Family BioDevice Foundry
 description: Design, fabricate, and test biomedical devices at the Conconi Family BioDevice Foundry at UBC.
-lead: The BioDevice Foundry is a shared research facility at UBC supporting students, researchers, and partners with advanced microfabrication, prototyping, and biofunctionalization capabilities.
+lead: The Conconi Family BioDevice Foundry is a shared research facility at UBC supporting students, researchers, and partners with advanced microfabrication, prototyping, and biofunctionalization capabilities.
 sublead: Not sure where to start? Use the quick links below or contact the team and describe what you are trying to build.
 hero_actions:
   - label: What We Offer
@@ -18,17 +18,17 @@ hero_actions:
 <section id="what-we-do">
   <div class="grid">
     <div class="card col-7">
-      <h2>What is the BioDevice Foundry?</h2>
-      <p>The BioDevice Foundry is a multidisciplinary facility that helps turn biomedical ideas into real, working devices.</p>
+      <h2>What is the Conconi Family BioDevice Foundry?</h2>
+      <p>The Conconi Family BioDevice Foundry is a multidisciplinary facility that helps turn biomedical ideas into real, working devices.</p>
       <p>We support projects that require precision fabrication, rapid prototyping, surface chemistry, and device characterization with access to specialized equipment and expert staff.</p>
-      <p class="muted">Whether you are developing a microfluidic chip, biosensor, implantable component, or custom research tool, the Foundry provides the infrastructure and support to move your work forward.</p>
+      <p class="muted">Whether you are developing a microfluidic chip, biosensor, implantable component, or custom research tool, the Conconi Family BioDevice Foundry provides the infrastructure and support to move your work forward.</p>
     </div>
     <div class="col-5">
       <figure class="placeholder-figure">
-        <img src="{{ '/assets/man-in-foundry.png' | relative_url }}" alt="A staff member in the cleanroom at the BioDevice Foundry" />
+        <img src="{{ '/assets/man-in-foundry.png' | relative_url }}" alt="A staff member in the cleanroom at the Conconi Family BioDevice Foundry" />
         <figcaption>
           <strong>Inside the cleanroom</strong>
-          <span>Staff-supported fabrication and prototyping in the BioDevice Foundry.</span>
+          <span>Staff-supported fabrication and prototyping in the Conconi Family BioDevice Foundry.</span>
         </figcaption>
       </figure>
     </div>
@@ -53,7 +53,7 @@ hero_actions:
 <section id="who-uses">
   <div class="grid">
     <div class="card col-6">
-      <h2>Who uses the Foundry?</h2>
+      <h2>Who uses the Conconi Family BioDevice Foundry?</h2>
       <p>Our facility supports a wide range of users, including:</p>
       <ul class="bullets">
         <li>UBC undergraduate and graduate students</li>
@@ -65,7 +65,7 @@ hero_actions:
     </div>
     <div class="card col-6">
       <h2>Why people come here</h2>
-      <p class="muted">Many users arrive with a concept, a need for specialized fabrication, or a device that must integrate materials, mechanics, and biology. The Foundry is built to support that full journey from prototype to tested system.</p>
+      <p class="muted">Many users arrive with a concept, a need for specialized fabrication, or a device that must integrate materials, mechanics, and biology. The Conconi Family BioDevice Foundry is built to support that full journey from prototype to tested system.</p>
     </div>
   </div>
 </section>
@@ -97,7 +97,7 @@ hero_actions:
   <div class="grid">
     <div class="col-4">
       <figure class="placeholder-figure">
-        <img src="{{ '/assets/laser-writer-equipent.jpg' | relative_url }}" alt="Laser writing equipment in the BioDevice Foundry" />
+        <img src="{{ '/assets/laser-writer-equipent.jpg' | relative_url }}" alt="Laser writing equipment in the Conconi Family BioDevice Foundry" />
         <figcaption>
           <strong>Signature equipment</strong>
           <span>Specialized fabrication tools support precise device development workflows.</span>
@@ -106,7 +106,7 @@ hero_actions:
     </div>
     <div class="col-4">
       <figure class="placeholder-figure">
-        <img src="{{ '/assets/user-in-training.jpg' | relative_url }}" alt="A user being trained in the BioDevice Foundry" />
+        <img src="{{ '/assets/user-in-training.jpg' | relative_url }}" alt="A user being trained in the Conconi Family BioDevice Foundry" />
         <figcaption>
           <strong>User training</strong>
           <span>New users receive hands-on onboarding and process-specific support.</span>
@@ -115,7 +115,7 @@ hero_actions:
     </div>
     <div class="col-4">
       <figure class="placeholder-figure">
-        <img src="{{ '/assets/cleanroom-flow.png' | relative_url }}" alt="A cleanroom process flow graphic for BioDevice Foundry users" />
+        <img src="{{ '/assets/cleanroom-flow.png' | relative_url }}" alt="A cleanroom process flow graphic for Conconi Family BioDevice Foundry users" />
         <figcaption>
           <strong>Process flow</strong>
           <span>A quick visual overview of how users move through fabrication and support pathways.</span>
@@ -129,7 +129,7 @@ hero_actions:
   <div class="grid">
     <div class="card col-7">
       <h2>How do I get started?</h2>
-      <p>Access to the BioDevice Foundry is managed through a structured user program designed to ensure safety, efficiency, and project success.</p>
+      <p>Access to the Conconi Family BioDevice Foundry is managed through a structured user program designed to ensure safety, efficiency, and project success.</p>
       <ol class="steps">
         <li>Create a user account</li>
         <li>Complete required training</li>
@@ -154,7 +154,7 @@ hero_actions:
   <div class="grid">
     <div class="card col-12">
       <h2>Need help designing or fabricating something?</h2>
-      <p>In addition to equipment access, the Foundry offers design and fabrication services for users who prefer staff-assisted workflows or need specialized expertise.</p>
+      <p>In addition to equipment access, the Conconi Family BioDevice Foundry offers design and fabrication services for users who prefer staff-assisted workflows or need specialized expertise.</p>
       <div class="btnrow">
         <a class="btn primary" href="{{ '/services-pricing/' | relative_url }}">Fees & Pricing</a>
         <a class="btn" href="{{ '/what-we-offer/' | relative_url }}">Explore Capabilities</a>
@@ -168,7 +168,7 @@ hero_actions:
   <div class="grid">
     <div class="card soft col-12">
       <h2>A shared facility within UBC Biomedical Engineering</h2>
-      <p class="muted">The BioDevice Foundry operates within the School of Biomedical Engineering at the University of British Columbia, supporting education, research, and innovation across disciplines.</p>
+      <p class="muted">The Conconi Family BioDevice Foundry operates within the School of Biomedical Engineering at the University of British Columbia, supporting education, research, and innovation across disciplines.</p>
     </div>
   </div>
 </section>
@@ -177,7 +177,7 @@ hero_actions:
   <div class="grid">
     <div class="card col-12">
       <h2>Not sure where to start?</h2>
-      <p>If you are unsure whether the Foundry is right for your project, reach out.</p>
+      <p>If you are unsure whether the Conconi Family BioDevice Foundry is right for your project, reach out.</p>
       <div class="btnrow">
         <a class="btn primary" href="{{ '/contact/' | relative_url }}">Contact Us</a>
         <a class="btn" href="{{ '/contact/' | relative_url }}">Book a Consultation</a>

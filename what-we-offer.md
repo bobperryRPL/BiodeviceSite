@@ -4,7 +4,7 @@ permalink: /what-we-offer/
 kicker: What We Offer
 hero_title: Capabilities that take biodevices from idea to working system
 description: Explore fabrication, prototyping, biofunctionalization, and characterization capabilities at the Conconi Family BioDevice Foundry.
-lead: The BioDevice Foundry combines cleanroom microfabrication with rapid prototyping, biofunctionalization, and device/material characterization in one place.
+lead: The Conconi Family BioDevice Foundry combines cleanroom microfabrication with rapid prototyping, biofunctionalization, and device/material characterization in one place.
 sublead: If you are new, start with Access & Training to understand onboarding. If you already have access, book through ColabMacs Login.
 hero_actions:
   - label: Access & Training
@@ -118,7 +118,7 @@ jump_links:
   <div class="grid">
     <div class="card col-8">
       <h2>Services</h2>
-      <p>In addition to equipment access, the Foundry supports projects through staff-assisted services and guidance, especially when you need specialized expertise or faster iteration.</p>
+      <p>In addition to equipment access, the Conconi Family BioDevice Foundry supports projects through staff-assisted services and guidance, especially when you need specialized expertise or faster iteration.</p>
       <div class="btnrow">
         <a class="btn primary" href="{{ '/services-pricing/' | relative_url }}">Fees & Pricing</a>
         <a class="btn" href="{{ '/contact/' | relative_url }}">Contact</a>
