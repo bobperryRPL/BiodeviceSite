@@ -9,18 +9,12 @@
   --weight-bold: 700;
   --border: #9db6d1;
   --muted: #38516f;
-  --bg: #e5eef7;
-  --bg-soft: #eef4fa;
   --text: #001b39;
   --brand-navy: #002145;
   --brand-blue: #004ea8;
-  --brand-sky: #2f86c9;
-  --brand-mist: #9fc5e8;
   --brand-red: #b01c2e;
   --brand-red-soft: #f3d8dc;
-  --brand-gold: #f2a900;
   --panel: #ffffff;
-  --panel-soft: #f2f7fb;
   --shadow: 0 14px 32px rgba(0, 33, 69, 0.12);
 }
 
@@ -144,10 +138,6 @@ a:hover {
   padding: 34px 0 10px;
 }
 
-.page-shell::before {
-  content: none;
-}
-
 .hero-block,
 section {
   padding: 22px 0;
@@ -172,17 +162,6 @@ section {
 
 .card.soft {
   background: #f7f9fb;
-}
-
-.kicker {
-  display: inline-block;
-  font-weight: var(--weight-semibold);
-  color: var(--brand-red);
-  background: var(--brand-red-soft);
-  border: 1px solid #d89da7;
-  padding: 6px 10px;
-  border-radius: 999px;
-  margin-bottom: 12px;
 }
 
 h1 {
