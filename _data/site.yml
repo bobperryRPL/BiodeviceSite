@@ -20,15 +20,18 @@ footer_signature_label: The University of British Columbia
 back_to_top_label: Back to top
 back_to_top_href: "#"
 footer_social_links:
-  - label: facebook
-    url: "#"
-    icon_class: icon-facebook-sign
-  - label: twitter
-    url: "#"
-    icon_class: icon-twitter-sign
+  - label: instagram
+    url: "https://www.instagram.com/sbme_ubc"
+    icon_class: icon-instagram
   - label: youtube
-    url: "#"
+    url: "https://www.youtube.com/c/UBCSchoolofBiomedicalEngineering"
     icon_class: icon-youtube
+  - label: linkedin
+    url: "https://www.linkedin.com/school/sbme-ubc/"
+    icon_class: icon-linkedin-sign
+  - label: flickr
+    url: "https://www.flickr.com/photos/sbme_ubc/"
+    icon_class: icon-flickr
 footer_legal_links:
   - label: Emergency Procedures
     title: Emergency Procedures
