@@ -4,11 +4,15 @@
     {% include head.html %}
   </head>
   <body>
-    {% include header.html %}
-    <main>
-      {{ content }}
-    </main>
-    {% include footer.html %}
+    <div class="container">
+      {% include header.html %}
+      <main class="content expand" role="main">
+        {{ content }}
+      </main>
+      {% include footer.html %}
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.ubc.ca/clf/7.0.5/js/ubc-clf.min.js"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
 </html>

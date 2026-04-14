@@ -1,53 +1,67 @@
-<header id="ubc7-header">
-  <div id="ubc7-global-header">
-    <div class="wrap ubc7-global-row">
-      <a class="ubc7-global-brand" href="https://www.ubc.ca/" aria-label="The University of British Columbia">
-        <span class="ubc7-crest" aria-hidden="true">
-          <img src="{{ '/assets/ubc-logo-2018-crest-white-rgb72.png' | relative_url }}" alt="" />
-        </span>
-        <span class="ubc7-global-brand-text">
-          <span class="ubc7-global-wordmark">
-            <span>The University of</span>
-            <span>British Columbia</span>
-          </span>
-          <span class="ubc7-global-campus">Vancouver Campus</span>
-        </span>
+<div class="collapse expand" id="ubc7-global-menu">
+  <div id="ubc7-search" class="expand">
+    <div id="ubc7-search-box">
+      <form class="form-search" method="get" action="https://www.ubc.ca/search/refine/" role="search">
+        <input type="text" name="q" placeholder="Search this website" aria-label="Search this website" class="input-xlarge search-query" />
+        <input type="hidden" name="label" value="{{ site.data.site.short_title }}" />
+        <input type="hidden" name="site" value="*.ubc.ca" />
+        <button type="submit" class="btn">Search</button>
+      </form>
+    </div>
+  </div>
+  <div id="ubc7-global-header" class="expand"></div>
+</div>
+
+<header id="ubc7-header" class="row-fluid expand">
+  <div class="span1">
+    <div id="ubc7-logo" aria-label="university logo" role="navigation">
+      <a href="https://www.ubc.ca/" title="The University of British Columbia (UBC)">The University of British Columbia</a>
+    </div>
+  </div>
+  <div class="span11" id="ubc7-wordmark-block">
+    <div id="ubc7-wordmark" aria-label="wordmark">
+      <a href="https://www.ubc.ca/" title="The University of British Columbia (UBC)">The University of British Columbia</a>
+      <span class="ubc7-campus" id="ubc7-vancouver-campus">{{ site.data.site.campus | default: "Vancouver campus" }}</span>
+    </div>
+    <div id="ubc7-global-utility">
+      <button type="button" data-toggle="collapse" data-target="#ubc7-global-menu" aria-label="search trigger">
+        <span>UBC Search</span>
+      </button>
+      <noscript><a id="ubc7-global-utility-no-script" href="https://www.ubc.ca/search/" title="UBC Search">UBC Search</a></noscript>
+    </div>
+  </div>
+</header>
+
+<div id="ubc7-unit" class="row-fluid expand">
+  <div class="span12">
+    <div class="navbar">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target="#ubc7-unit-navigation" aria-label="Open site menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </a>
-      <div class="ubc7-global-meta">
-        <a class="ubc7-search-link" href="https://search.ubc.ca/" title="UBC Search">UBC Search</a>
-      </div>
+    </div>
+    <div id="ubc7-unit-name">
+      <a href="{{ '/' | relative_url }}" title="{{ site.data.site.title }}">
+        <span id="ubc7-unit-faculty">{{ site.data.site.faculty | default: "School of Biomedical Engineering" }}</span>
+        <span id="ubc7-unit-identifier">{{ site.data.site.short_title }}</span>
+      </a>
     </div>
   </div>
+</div>
 
-  <div id="ubc7-unit">
-    <div class="wrap">
-      <div class="ubc7-unit-row">
-        <div id="ubc7-unit-name" class="ubc7-single-element">
-          <a href="{{ '/' | relative_url }}" aria-label="Home">
-            <span class="ubc7-unit-mark" aria-hidden="true">
-              <img src="{{ '/assets/sbme-logo.png' | relative_url }}" alt="" />
-            </span>
-            <span id="ubc7-unit-identifier">{{ site.data.site.short_title }}</span>
-          </a>
-        </div>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-          Menu
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div id="ubc7-unit-menu" role="navigation" aria-label="Primary">
-    <div class="wrap">
-      <nav id="primary-nav" aria-label="Primary">
-        <ul>
+<div id="ubc7-unit-menu" class="navbar expand" role="navigation" aria-label="Primary">
+  <div class="navbar-inner expand">
+    <div class="container">
+      <div class="nav-collapse collapse" id="ubc7-unit-navigation">
+        <ul class="nav">
           {% for item in site.data.navigation.primary %}
-            <li>
+            <li{% if page.url == item.url %} class="active"{% endif %}>
               <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
             </li>
           {% endfor %}
         </ul>
-      </nav>
+      </div>
     </div>
   </div>
-</header>
+</div>

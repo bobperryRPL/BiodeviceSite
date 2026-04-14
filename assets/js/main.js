@@ -2,17 +2,6 @@ document.querySelectorAll("[data-year]").forEach((node) => {
   node.textContent = new Date().getFullYear();
 });
 
-const navToggle = document.querySelector(".nav-toggle");
-const primaryNav = document.getElementById("primary-nav");
-
-if (navToggle && primaryNav) {
-  navToggle.addEventListener("click", () => {
-    const expanded = navToggle.getAttribute("aria-expanded") === "true";
-    navToggle.setAttribute("aria-expanded", String(!expanded));
-    primaryNav.classList.toggle("open", !expanded);
-  });
-}
-
 const pricingButtons = document.querySelectorAll(".seg");
 
 function setPricingFocus(which) {
