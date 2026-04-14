@@ -3,6 +3,45 @@ short_title: Conconi Family BioDevice Foundry
 organization: University of British Columbia
 faculty: School of Biomedical Engineering
 campus: Vancouver Campus
+footer_unit_name: Unit Name
+footer_campus_line: Vancouver Campus | Okanagan Campus
+footer_street: 1234 Street Name
+footer_city: Vancouver | Kelowna
+footer_province: BC
+footer_province_title: British Columbia
+footer_country: Canada
+footer_postal: V0V 0V0
+footer_phone_label: Tel
+footer_email_label: E-mail
+footer_social_heading: Find us on
+footer_signature_url: https://www.ubc.ca/
+footer_signature_title: The University of British Columbia (UBC)
+footer_signature_label: The University of British Columbia
+back_to_top_label: Back to top
+back_to_top_href: "#"
+footer_social_links:
+  - label: facebook
+    url: "#"
+    icon_class: icon-facebook-sign
+  - label: twitter
+    url: "#"
+    icon_class: icon-twitter-sign
+  - label: youtube
+    url: "#"
+    icon_class: icon-youtube
+footer_legal_links:
+  - label: Emergency Procedures
+    title: Emergency Procedures
+    url: https://cdn.ubc.ca/clf/ref/emergency
+  - label: Terms of Use
+    title: Terms of Use
+    url: https://cdn.ubc.ca/clf/ref/terms
+  - label: Copyright
+    title: UBC Copyright
+    url: https://cdn.ubc.ca/clf/ref/copyright
+  - label: Accessibility
+    title: Accessibility
+    url: https://cdn.ubc.ca/clf/ref/accessibility
 address_lines:
   - B1130, SBME, UBC
   - 6088 University Blvd

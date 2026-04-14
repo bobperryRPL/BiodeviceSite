@@ -2,41 +2,40 @@
 <footer id="ubc7-footer" class="expand">
     <div class="row-fluid expand" id="ubc7-unit-footer">
         <div class="span10" id="ubc7-unit-address">
-            <div id="ubc7-address-unit-name">Unit Name</div>
-            <div id="ubc7-address-campus">Vancouver Campus | Okanagan Campus</div>
-            <div id="ubc7-address-street">1234 Street Name</div>
+            <div id="ubc7-address-unit-name">{{ site.data.site.footer_unit_name }}</div>
+            <div id="ubc7-address-campus">{{ site.data.site.footer_campus_line }}</div>
+            <div id="ubc7-address-street">{{ site.data.site.footer_street }}</div>
             <div id="ubc7-address-location">
-                <span id="ubc7-address-city">Vancouver | Kelowna</span>, <span id="ubc7-address-province" title="British Columbia">BC</span> <span id="ubc7-address-country">Canada</span> <span id="ubc7-address-postal">V0V 0V0</span>
+                <span id="ubc7-address-city">{{ site.data.site.footer_city }}</span>, <span id="ubc7-address-province" title="{{ site.data.site.footer_province_title }}">{{ site.data.site.footer_province }}</span> <span id="ubc7-address-country">{{ site.data.site.footer_country }}</span> <span id="ubc7-address-postal">{{ site.data.site.footer_postal }}</span>
             </div>
-            <div id="ubc7-address-phone">Tel XXX XXX XXXX</div>
-            <div id="ubc7-address-email">E-mail email@ubc.ca</div>
+            <div id="ubc7-address-phone">{{ site.data.site.footer_phone_label }} {{ site.data.site.contact_phone }}</div>
+            <div id="ubc7-address-email">{{ site.data.site.footer_email_label }} {{ site.data.site.contact_email }}</div>
         </div>
         <div class="span2">
-            <strong>Find us on</strong>
+            <strong>{{ site.data.site.footer_social_heading }}</strong>
             <div id="ubc7-unit-social-icons">
-                <a href="#" aria-label="facebook"><i class="icon-facebook-sign"></i></a>&nbsp;
-                <a href="#" aria-label="twitter"><i class="icon-twitter-sign"></i></a>&nbsp;
-                <a href="#" aria-label="youtube"><i class="icon-youtube"></i></a>
+                {% for item in site.data.site.footer_social_links %}
+                    <a href="{{ item.url }}" aria-label="{{ item.label }}"><i class="{{ item.icon_class }}"></i></a>{% unless forloop.last %}&nbsp;{% endunless %}
+                {% endfor %}
             </div>
         </div>
     </div>
     <div class="row-fluid expand ubc7-back-to-top">
         <div class="span2">
-            <a href="#" title="Back to top">Back to top <div class="ubc7-arrow up-arrow grey"></div></a>
+            <a href="{{ site.data.site.back_to_top_href }}" title="{{ site.data.site.back_to_top_label }}">{{ site.data.site.back_to_top_label }} <div class="ubc7-arrow up-arrow grey"></div></a>
         </div>
     </div>
     <div class="row-fluid expand" id="ubc7-global-footer">
-        <div class="span5" id="ubc7-signature"><a href="//www.ubc.ca/" title="The University of British Columbia (UBC)">The University of British Columbia</a></div>
+        <div class="span5" id="ubc7-signature"><a href="{{ site.data.site.footer_signature_url }}" title="{{ site.data.site.footer_signature_title }}">{{ site.data.site.footer_signature_label }}</a></div>
         <div class="span7" id="ubc7-footer-menu">
         </div>
     </div>
     <div class="row-fluid expand" id="ubc7-minimal-footer">
         <div class="span12">
             <ul>
-                <li><a href="//cdn.ubc.ca/clf/ref/emergency" title="Emergency Procedures">Emergency Procedures</a> <span class="divider">|</span></li>
-                <li><a href="//cdn.ubc.ca/clf/ref/terms" title="Terms of Use">Terms of Use</a> <span class="divider">|</span></li>
-                <li><a href="//cdn.ubc.ca/clf/ref/copyright" title="UBC Copyright">Copyright</a> <span class="divider">|</span></li>
-                <li><a href="//cdn.ubc.ca/clf/ref/accessibility" title="Accessibility">Accessibility</a></li>
+                {% for item in site.data.site.footer_legal_links %}
+                    <li><a href="{{ item.url }}" title="{{ item.title }}">{{ item.label }}</a>{% unless forloop.last %} <span class="divider">|</span>{% endunless %}</li>
+                {% endfor %}
             </ul>
         </div>
     </div>
