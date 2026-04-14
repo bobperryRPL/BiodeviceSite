@@ -60,12 +60,13 @@ a:hover {
 }
 
 #ubc7-header .span1,
-#ubc7-header .span11,
-#ubc7-logo,
-#ubc7-logo a,
-#ubc7-wordmark-block,
-#ubc7-wordmark {
-  background: transparent;
+#ubc7-header .span11 {
+  background-color: var(--brand-navy);
+}
+
+#ubc7-header .span11 {
+  margin-left: 0;
+  width: 93.61702127659574%;
 }
 
 #ubc7-unit {
