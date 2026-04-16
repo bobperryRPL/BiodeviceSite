@@ -104,6 +104,7 @@ hero_actions:
     <div class="card col-8">
       <h2>Services</h2>
       <p>In addition to instrument access, the Conconi Family BioDevice Foundry supports users through staff-assisted workflows and project guidance. This is especially useful if you are new to the processes, need faster iteration, or have complex constraints.</p>
+      <p class="muted">If the team is fabricating parts for you, completed work may be placed in a pickup locker. See the pickup page for location details and how the locker handoff works.</p>
       <ul class="inline-list">
         <li>Training and staff support</li>
         <li>Custom processing by staff</li>
@@ -111,6 +112,7 @@ hero_actions:
       </ul>
       <div class="btnrow">
         <a class="btn primary" href="{{ '/contact/' | relative_url }}">Discuss a project</a>
+        <a class="btn" href="{{ '/part-pickup/' | relative_url }}">Part Pickup</a>
       </div>
     </div>
     <div class="card soft col-4">

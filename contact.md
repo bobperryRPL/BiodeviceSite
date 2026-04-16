@@ -35,6 +35,7 @@ hero_actions:
       <div class="btnrow">
         <a class="btn" href="{{ site.data.site.google_maps_url }}" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
         <a class="btn" href="{{ '/about-the-foundry/' | relative_url }}">About the Conconi Family BioDevice Foundry</a>
+        <a class="btn" href="{{ '/part-pickup/' | relative_url }}">Part Pickup</a>
       </div>
       <p class="help">Tip: if you are visiting for the first time, message the team ahead of time and ask for entry and wayfinding details.</p>
     </div>
@@ -89,6 +90,11 @@ hero_actions:
           <strong>Need pricing?</strong>
           <span class="muted">See rates for access, staff support, and instrument hourly fees.</span><br />
           <a class="btn" style="margin-top:10px; display:inline-block;" href="{{ '/services-pricing/' | relative_url }}">Services & Pricing</a>
+        </div>
+        <div class="item">
+          <strong>Picking up completed parts?</strong>
+          <span class="muted">See locker location details and what to expect in your pickup email.</span><br />
+          <a class="btn" style="margin-top:10px; display:inline-block;" href="{{ '/part-pickup/' | relative_url }}">Part Pickup</a>
         </div>
         <div class="item">
           <strong>Returning user?</strong>

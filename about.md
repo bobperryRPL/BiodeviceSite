@@ -103,6 +103,7 @@ jump_links:
       <div class="btnrow">
         <a class="btn" href="{{ '/contact/' | relative_url }}">Contact Us</a>
         <a class="btn" href="{{ '/access-training/' | relative_url }}">How to Become a User</a>
+        <a class="btn" href="{{ '/part-pickup/' | relative_url }}">Part Pickup</a>
       </div>
     </div>
     <div class="card soft col-4">
