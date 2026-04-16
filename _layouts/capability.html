@@ -46,7 +46,19 @@ layout: default
           <a class="btn" href="{{ site.data.site.nemo_url }}" target="_blank" rel="noopener noreferrer">ColabMacs Login</a>
         </div>
         <div style="margin-top:14px;">
-          {% include placeholder-image.html eyebrow="Expected tool image" title=page.title text="Capability pages usually include a photo of the instrument, process setup, or a technical diagram of the workflow." alt=page.title %}
+          {% if page.image %}
+            {% assign capability_image_title = page.image_title | default: page.title %}
+            {% assign capability_image_alt = page.image_alt | default: page.title %}
+            {% include placeholder-image.html
+              src=page.image
+              eyebrow=page.image_eyebrow
+              title=capability_image_title
+              text=page.image_text
+              alt=capability_image_alt
+            %}
+          {% else %}
+            {% include placeholder-image.html eyebrow="Expected tool image" title=page.title text="Capability pages usually include a photo of the instrument, process setup, or a technical diagram of the workflow." alt=page.title %}
+          {% endif %}
         </div>
       </div>
     </div>

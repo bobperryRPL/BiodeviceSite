@@ -19,6 +19,11 @@ requirements:
   - Complete tool-specific training
   - Follow cleanroom and process safety rules
   - Confirm sample compatibility before booking
+image: /assets/Equipment pictures/Oxford PlasmaPro 100 Cobra 300.jpg
+image_eyebrow: Equipment photo
+image_title: Plasma processing equipment
+image_text: Plasma tools support cleaning, activation, and etching steps that prepare surfaces for downstream fabrication and bonding.
+image_alt: Oxford PlasmaPro 100 Cobra 300 plasma system in the Conconi Family BioDevice Foundry
 placeholder_notes: "Placeholder: add plasma tool types, supported gases, etch targets, sample size limits, and common process constraints here."
 related:
   - lithography

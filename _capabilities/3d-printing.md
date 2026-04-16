@@ -19,6 +19,11 @@ requirements:
   - Complete required printer training
   - Use approved material families
   - Confirm cleaning and post-processing requirements
+image: /assets/Equipment pictures/Bambu Lab H2D.jpg
+image_eyebrow: Equipment photo
+image_title: 3D printing equipment
+image_text: Rapid prototyping printers support fast iteration of custom parts, tooling, and device housings.
+image_alt: Bambu Lab H2D 3D printer in the Conconi Family BioDevice Foundry
 placeholder_notes: "Placeholder: add printer types, build volumes, material families, post-processing options, and thermal or solvent limits here."
 related:
   - cnc-machining

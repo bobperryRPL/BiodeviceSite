@@ -19,6 +19,11 @@ requirements:
   - Complete machine training
   - Use only approved materials
   - Follow ventilation and fire safety rules
+image: /assets/Equipment pictures/ometch AF2440-100 laser cutter.jpg
+image_eyebrow: Equipment photo
+image_title: Laser cutting equipment
+image_text: Laser cutting supports fast fabrication of flat parts, templates, housings, and support layers.
+image_alt: OMTech AF2440-100 laser cutter in the Conconi Family BioDevice Foundry
 placeholder_notes: "Placeholder: add supported materials, max thickness, bed size, restricted materials, and ventilation notes here."
 related:
   - cnc-machining

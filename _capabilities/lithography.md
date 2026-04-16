@@ -20,6 +20,11 @@ requirements:
   - Complete required training
   - Follow cleanroom and chemical handling protocols
   - Book time if self-serve or request staff support
+image: /assets/Equipment pictures/Heidelberg mask writer.jpg
+image_eyebrow: Equipment photo
+image_title: Lithography equipment
+image_text: Patterning tools support mask generation and microscale feature definition for device fabrication workflows.
+image_alt: Heidelberg mask writer used for lithography in the Conconi Family BioDevice Foundry
 placeholder_notes: "Placeholder: add lithography tool list, resist families, substrate sizes, typical minimum feature sizes, alignment capability, and supported materials here."
 related:
   - plasma-etch

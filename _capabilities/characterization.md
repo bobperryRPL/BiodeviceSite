@@ -19,6 +19,11 @@ requirements:
   - Complete required training
   - Confirm sample size and compatibility
   - Follow booking and handling procedures
+image: /assets/Equipment pictures/Olympus MX63  microscope.jpg
+image_eyebrow: Equipment photo
+image_title: Characterization equipment
+image_text: Microscopy and measurement tools help inspect structures, validate process results, and troubleshoot devices.
+image_alt: Olympus MX63 microscope used for characterization in the Conconi Family BioDevice Foundry
 placeholder_notes: "Placeholder: add tool list, what each method is best for, sample size constraints, and booking rules here."
 related:
   - lithography

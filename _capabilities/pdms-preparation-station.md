@@ -19,6 +19,11 @@ requirements:
   - Complete required training
   - Follow material handling and cleanliness protocols
   - Confirm bonding and curing workflow needs
+image: /assets/Equipment pictures/Thermo Scientific Lindberg Blue M™ Vacuum Oven.jpg
+image_eyebrow: Equipment photo
+image_title: PDMS preparation equipment
+image_text: Vacuum and curing equipment support repeatable replica molding and preparation workflows for PDMS devices.
+image_alt: Thermo Scientific Lindberg Blue M vacuum oven used in PDMS preparation workflows
 placeholder_notes: "Placeholder: add mixers, degassers, ovens, bonding guidance, best practices, and any restricted materials here."
 related:
   - lithography

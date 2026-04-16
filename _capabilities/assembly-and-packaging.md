@@ -19,6 +19,11 @@ requirements:
   - Confirm process compatibility and materials
   - Follow assembly and handling protocols
   - Coordinate staff support for specialized bonding or finishing
+image: /assets/Equipment pictures/Disco dicing saw DAD3241.jpg
+image_eyebrow: Equipment photo
+image_title: Assembly and packaging equipment
+image_text: Packaging workflows can include precision finishing and preparation steps before devices move into testing or handoff.
+image_alt: Disco dicing saw used for biodevice assembly and packaging workflows
 placeholder_notes: "Placeholder: add dicing notes, bonding and curing options, fixtures, connectors, and packaging constraints here."
 related:
   - cnc-machining

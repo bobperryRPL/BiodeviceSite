@@ -97,7 +97,7 @@ hero_actions:
   <div class="grid">
     <div class="col-4">
       <figure class="placeholder-figure">
-        <img src="{{ '/assets/laser-writer-equipent.jpg' | relative_url }}" alt="Laser writing equipment in the Conconi Family BioDevice Foundry" />
+        <img src="{{ '/assets/Equipment pictures/Heidelberg mask writer.jpg' | relative_url }}" alt="Heidelberg mask writer equipment in the Conconi Family BioDevice Foundry" />
         <figcaption>
           <strong>Signature equipment</strong>
           <span>Specialized fabrication tools support precise device development workflows.</span>
@@ -115,7 +115,7 @@ hero_actions:
     </div>
     <div class="col-4">
       <figure class="placeholder-figure">
-        <img src="{{ '/assets/cleanroom-flow.png' | relative_url }}" alt="A cleanroom process flow graphic for Conconi Family BioDevice Foundry users" />
+        <img src="{{ '/assets/Circle diagram_cleanroom.jpg' | relative_url }}" alt="A cleanroom process flow diagram for Conconi Family BioDevice Foundry users" />
         <figcaption>
           <strong>Process flow</strong>
           <span>A quick visual overview of how users move through fabrication and support pathways.</span>
