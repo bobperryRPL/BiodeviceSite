@@ -48,10 +48,10 @@ jump_links:
 <section id="facility-visual">
   <div class="grid">
     <div class="col-7">
-      {% include placeholder-image.html eyebrow="Expected image" title="Facility overview or cleanroom interior" text="About pages usually include a wide environment image showing the space, scale, and research setting." alt="Placeholder for facility overview or cleanroom interior" %}
+      {% include placeholder-image.html src="/assets/Equipment pictures/Oxford PlasmaPro 100 Cobra 300.jpg" eyebrow="Facility image" title="Cleanroom interior" text="Oxford equipment within the cleanroom gives visitors a clearer sense of the fabrication environment and facility scale." alt="Oxford PlasmaPro 100 Cobra 300 system inside the cleanroom at the Conconi Family BioDevice Foundry" %}
     </div>
     <div class="col-5">
-      {% include placeholder-image.html eyebrow="Expected diagram" title="Facility layout or workflow diagram" text="A simple visual explaining how cleanroom, biofunctionalization, characterization, and prototyping areas connect would fit here." alt="Placeholder for facility layout or workflow diagram" %}
+      {% include placeholder-image.html src="/assets/cleanroom layout.png" eyebrow="Facility layout" title="Cleanroom layout" text="This layout image helps orient visitors to the major spaces and workflow zones inside the facility." alt="Cleanroom layout diagram for the Conconi Family BioDevice Foundry" %}
     </div>
   </div>
 </section>
@@ -106,7 +106,7 @@ jump_links:
       </div>
     </div>
     <div class="card soft col-4">
-      {% include placeholder-image.html eyebrow="Expected image" title="Wayfinding or exterior reference image" text="Visitors usually expect a building exterior, entrance, or location photo near the address and hours section." alt="Placeholder for wayfinding or exterior reference image" %}
+      {% include placeholder-image.html src="/assets/shrum building.png" eyebrow="Wayfinding" title="Wayfinding reference" text="Use the Shrum building exterior as a visual landmark when navigating to the foundry." alt="Shrum building exterior used as a wayfinding reference for the Conconi Family BioDevice Foundry" %}
     </div>
   </div>
 </section>

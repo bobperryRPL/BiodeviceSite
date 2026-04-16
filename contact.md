@@ -49,9 +49,9 @@ hero_actions:
       </ul>
       <div style="margin-top:14px;">
         <figure class="placeholder-figure">
-          <img src="{{ '/assets/building-sbme.jpg' | relative_url }}" alt="Exterior view of the SBME building at UBC" />
+          <img src="{{ '/assets/shrum building.png' | relative_url }}" alt="Exterior view of the Shrum building at UBC" />
           <figcaption>
-            <strong>SBME building entrance</strong>
+            <strong>Shrum building reference</strong>
             <span>Use this as a visual landmark while the detailed map is still in progress.</span>
           </figcaption>
         </figure>

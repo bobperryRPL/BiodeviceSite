@@ -56,7 +56,7 @@ hero_actions:
           </figure>
         </div>
         <div class="col-6">
-          {% include placeholder-image.html eyebrow="Expected image" title="Staff supporting users" text="A process-support or training photo would usually reinforce the service role of the team." alt="Placeholder for staff supporting users" %}
+          {% include placeholder-image.html src="/assets/staff supporting users.png" eyebrow="Support in action" title="Staff supporting users" text="This image shows the team’s hands-on role in training, process guidance, and user support." alt="Staff supporting users in the Conconi Family BioDevice Foundry" %}
         </div>
       </div>
     </div>
