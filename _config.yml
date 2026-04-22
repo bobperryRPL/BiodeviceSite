@@ -1,7 +1,7 @@
 title: Conconi Family BioDevice Foundry
 description: Shared research facility at UBC for biomedical device fabrication, prototyping, biofunctionalization, and characterization.
-baseurl: ""
-url: ""
+url: "https://bobperryRPL.github.io"
+baseurl: "/BiodeviceSite"
 
 markdown: kramdown
 permalink: pretty
@@ -25,6 +25,11 @@ defaults:
       layout: capability
 
 include:
-  - admin
   - _redirects
   - _headers
+
+exclude:
+  - admin
+  - CLF Template
+  - new site template
+  - ubc_signature_design_package
