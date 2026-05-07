@@ -47,12 +47,13 @@ hero_actions:
             </tr>
           </thead>
           <tbody>
-            {% for row in site.data.pricing.facility_rates %}
+            {% assign facility_rates = site.data.pricing | where: "section", "facility" %}
+            {% for row in facility_rates %}
               <tr>
-                <td>{{ row.resource }}</td>
-                <td class="col-internal{% if row.muted %} muted{% endif %}">{{ row.internal }}</td>
-                <td class="col-academic{% if row.muted %} muted{% endif %}">{{ row.academic }}</td>
-                <td class="col-industrial{% if row.muted %} muted{% endif %}">{{ row.industrial }}</td>
+                <td>{{ row.name }}</td>
+                <td class="col-internal{% if row.muted == 'true' %} muted{% endif %}">{{ row.internal }}</td>
+                <td class="col-academic{% if row.muted == 'true' %} muted{% endif %}">{{ row.academic }}</td>
+                <td class="col-industrial{% if row.muted == 'true' %} muted{% endif %}">{{ row.industrial }}</td>
               </tr>
             {% endfor %}
           </tbody>
@@ -83,12 +84,13 @@ hero_actions:
             </tr>
           </thead>
           <tbody>
-            {% for row in site.data.pricing.instrument_rates %}
+            {% assign instrument_rates = site.data.pricing | where: "section", "instrument" %}
+            {% for row in instrument_rates %}
               <tr>
-                <td>{{ row.instrument }}</td>
-                <td class="col-internal{% if row.muted %} muted{% endif %}">{{ row.internal }}</td>
-                <td class="col-academic{% if row.muted %} muted{% endif %}">{{ row.academic }}</td>
-                <td class="col-industrial{% if row.muted %} muted{% endif %}">{{ row.industrial }}</td>
+                <td>{{ row.name }}</td>
+                <td class="col-internal{% if row.muted == 'true' %} muted{% endif %}">{{ row.internal }}</td>
+                <td class="col-academic{% if row.muted == 'true' %} muted{% endif %}">{{ row.academic }}</td>
+                <td class="col-industrial{% if row.muted == 'true' %} muted{% endif %}">{{ row.industrial }}</td>
               </tr>
             {% endfor %}
           </tbody>

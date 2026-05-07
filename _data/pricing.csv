@@ -1,0 +1,34 @@
+section,name,internal,academic,industrial,muted
+facility,"Startup fee (add gown, hood, boots)","$300","$300","$300",
+facility,"Gown cleaning fee (every 3 to 4 weeks)","$7/cleaning","$7/cleaning","$7/cleaning",
+facility,"Monthly access fee","$40/month","$40/month","$60/month",
+facility,"Training and staff support","$40/hr","$40/hr","$90/hr",
+facility,"Custom processing by staff","$75/hr","$100/hr","$175/hr",
+facility,"Locker rental fee","$15/month","$15/month","$25/month",
+facility,"Cleanroom notebook","$15/each","$15/each","$15/each",
+facility,"Safety goggles","$10/each","$10/each","$10/each",
+facility,"Deposition materials","Case-by-case","Case-by-case","Case-by-case",true
+instrument,"Mask aligner","$30/hr","$30/hr","$60/hr",
+instrument,"Direct laser writer","$40/hr","$50/hr","$90/hr",
+instrument,"DRIE","$60/hr","$80/hr","$150/hr",
+instrument,"Plasma cleaner","$10/hr","$10/hr","$20/hr",
+instrument,"Microscope","$20/hr","$25/hr","$40/hr",
+instrument,"Dektak profilometer","$25/hr","$35/hr","$75/hr",
+instrument,"Goniometer","$10/hr","$10/hr","$20/hr",
+instrument,"Rheometer","$22/hr","$30/hr","$60/hr",
+instrument,"Sonicator","$0","$0","$0",
+instrument,"Spin coater","$10/hr","$10/hr","$20/hr",
+instrument,"Ovens (vacuum)","$5/hr","$10/hr","$15/hr",
+instrument,"Wetbenches","$30/hr","$40/hr","$60/hr",
+instrument,"3D FDM printer","$4/hr","$4/hr","$20/hr",
+instrument,"3D SLA printer","$4/hr","$4/hr","$20/hr",
+instrument,"Grinder/polisher","$30/hr","$40/hr","$70/hr",
+instrument,"Dicing saw","$35/hr","$50/hr","$105/hr",
+instrument,"Hot plate","$15/hr","$15/hr","$25/hr",
+instrument,"Laser cutter","$40/hr","$40/hr","$90/hr",
+instrument,"4-point probe","$30/hr","$40/hr","$90/hr",
+instrument,"Parylene coater (find another supplier)","$50/hr","$80/hr","$120/hr",
+instrument,"Microarray printer and microdispensing system","Contact us","Contact us","Contact us",true
+instrument,"microCNC machine","Contact us","Contact us","Contact us",true
+instrument,"Optical profilometer","Contact us","Contact us","Contact us",true
+instrument,"SEM sample coater","Contact us","Contact us","Contact us",true
