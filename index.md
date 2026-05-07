@@ -3,8 +3,8 @@ title: Home
 hero_title: Conconi Family Biodevice Foundry
 kicker: Conconi Family Biodevice Foundry
 description: Design, fabricate, and test biomedical devices at the Conconi Family Biodevice Foundry at UBC.
-lead: The Conconi Family Biodevice Foundry is a shared research facility at UBC supporting students, researchers, and partners with advanced microfabrication, prototyping, and biofunctionalization capabilities.
-sublead: Not sure where to start? Use the quick links below or contact the team and describe what you are trying to build.
+lead: The Conconi Family Biodevice Foundry is a shared access facility at UBC supporting students, researchers, and partners with advanced microfabrication, prototyping, and biofunctionalization capabilities. We help turn biomedical ideas into real, working devices. Whether you are developing a microfluidic chip, biosensor, implantable component, or custom research tool, the Conconi Family Biodevice Foundry provides the infrastructure and support to move your work forward
+# sublead: Not sure where to start? Use the quick links below or contact the team and describe what you are trying to build.
 hero_actions:
   - label: What We Offer
     url: /what-we-offer/
@@ -35,7 +35,7 @@ hero_actions:
   </div>
 </section>
 
-<section id="quick-links">
+<!-- <section id="quick-links">
   <div class="grid">
     <div class="card soft col-12">
       <h2>Quick links</h2>
@@ -48,7 +48,7 @@ hero_actions:
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section id="who-uses">
   <div class="grid">
